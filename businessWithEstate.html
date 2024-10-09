@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WhiteCliff</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/other.css">
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
@@ -82,15 +83,20 @@
       </div>
     </header>
     <main class="main">
-      <div class="container">
-        <p class="approval">Одобрим за 1 час</p>
-      </div>
+      <nav aria-label="breadcrumb">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li><a href="/">Главная</a></li>
+            <li><a href="#">Бизнесу</a></li>
+            <li class="active">Кредитование бизнеса под залог коммерческой недвижимости</li>
+          </ol>
+        </div>
+      </nav>
       <section class="hero">
         <div class="container">
           <div class="hero__title-box">
-            <h1 class="hero__title">
-              Кредитование физ лиц под залог. Кредитование бизнеса без залога и
-              под залог. Одобрение 97%
+            <h1 class="hero__title hero__title-box--private">
+              Получите кредит для бизнеса с залогом коммерческой недвижимости до 200 млн ₽  на срок до 20 лет онлайн. Ставка от 12%, 97% одобрения
             </h1>
             <p class="hero__subtitle">
               Одобрено кредитов за сегодня
@@ -139,67 +145,29 @@
           </div>
         </div>
       </section>
-      <section class="benefits">
-        <div class="container">
-          <h2 class="benefits__title">
-            <span class="text--semibold">Больше никаких отказов!</span> <br />
-            Выработали схему работы с банками –
-            <span class="text--semibold">одобряют 9/10 поданных заявок</span>
-          </h2>
-          <div class="benefits__items">
-            <div class="benefits__item">
-              <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
-                <h3 class="benefits__subtitle">
-                  Точечный подбор банков или частного инвестора для
-                  максимального шанса одобрения
-                </h3>
-              </div>
-              <p class="benefits__text">
-                Мы не делаем массовых рассылок. Вместо этого
-                <span class="text--semibold"
-                  >тщательно изучаем ситуацию клиента и подбираем банк,</span
-                >
-                соответствующий его профилю на 100%.
-              </p>
+      <section class="deposit">
+        <div class='container'>
+          <h2 class="deposit__title">Что подойдет в качестве залога:</h2>
+          <div class="deposit__items deposit__items--flex">
+            <div class="deposit__item">
+              <div class="deposit__circle"></div>
+              <div class="deposit__text">Автосервис</div>
             </div>
-            <div class="benefits__item">
-              <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
-                <h3 class="benefits__subtitle">
-                  Оплата только после выдачи кредита
-                </h3>
-              </div>
-              <p class="benefits__text">
-                Никаких предоплат и скрытых комиссий. Вы платите лишь после
-                того, как деньги уже у вас на счету
-              </p>
+            <div class="deposit__item">
+              <div class="deposit__circle"></div>
+              <div class="deposit__text">Торговый центр</div>
             </div>
-            <div class="benefits__item">
-              <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
-                <h3 class="benefits__subtitle">
-                  Полное сопровождение на всех этапах
-                </h3>
-              </div>
-              <p class="benefits__text">
-                Наши менеджеры помогают собрать документы, правильно подать
-                заявку, при необходимости взаимодействуют с банком –
-                <span class="text--semibold"
-                  >вам остается только подписать договор</span
-                >
-              </p>
+            <div class="deposit__item">
+              <div class="deposit__circle"></div>
+              <div class="deposit__text">Ресторан</div>
             </div>
-            <div class="benefits__item">
-              <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
-                <h3 class="benefits__subtitle">Более 3241 успешных кредитов</h3>
-              </div>
-              <div class="benefits__text">
-                За 4 года работы мы помогли сотням компаний получить
-                финансирование на сумму
-                <span class="text--semibold">свыше 5 млрд рублей</span>
-              </div>
+            <div class="deposit__item">
+              <div class="deposit__circle"></div>
+              <div class="deposit__text">Гостиница</div>
+            </div>
+            <div class="deposit__item">
+              <div class="deposit__circle"></div>
+              <div class="deposit__text">Офис</div>
             </div>
           </div>
         </div>
@@ -276,6 +244,8 @@
               >
               <input
                 type="number"
+                id="number"
+                name="number"
                 class="results__input"
                 placeholder="+7 (___) ___-__-__" />
               <a href="#" class="results__btn">Получить кредит</a>
@@ -317,695 +287,100 @@
           </p>
         </div>
       </section>
-      <section class="services">
-        <div class="container">
-          <h2 class="services__title">
-            Предоставляем широкий спектр услуг по финансированию для бизнеса и
-            физ лиц
-          </h2>
-          <div class="services__tabs-box">
-            <p class="services__text">С нами вы сможете:</p>
-            <ul class="services__tabs">
-              <li class="services__tab services__tab--active">
-                <button class="services__tab-btn">
-                  Получить кредит для бизнеса
-                </button>
-              </li>
-              <li class="services__tab">
-                <button class="services__tab-btn">
-                  Получить кредит для физ лиц
-                </button>
-              </li>
-              <li class="services__tab">
-                <button class="services__tab-btn">
-                  Финансирование от частного инвестора
-                </button>
-              </li>
-              <li class="services__tab">
-                <button class="services__tab-btn">Выкупить имущество</button>
-              </li>
-            </ul>
-          </div>
-          <div class="services__items services__items--active">
-            <div class="services__item item-services">
-              <h3 class="item-services__title">
-                Кредитование юридических лиц без залога
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                500 тыс ₽ – 100 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 15% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 3х лет</p>
-                </div>
+      <section class="conditions">
+        <div class='container'>
+          <h2 class="conditions__title">Условия и документы для получения кредита для юр лица и ИП с залогом коммерческой недвижимости</h2>
+          <div class="conditions__items">
+              <div class="conditions__item">
+                <div class="conditions__subtitle">Условия</div>
+                <ul class="conditions__list">
+                  <li class="conditions__list-item">Возраст от 21 до 65 лет;</li>
+                  <li class="conditions__list-item">Гражданство РФ;</li>
+                  <li class="conditions__list-item">Отсутствие судимостей</li>
+                  <li class="conditions__list-item">Исправная КИ</li>
+                  <li class="conditions__list-item">Отсутствие долгов ФССП и ФНС</li>
+                  <li class="conditions__list-item">Отсутствие в стоп листе</li>
+                </ul>
               </div>
-              <div class="item-services__list">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Без перевода оборотов в банк
-                  </p>
-                </div>
+              <div class="conditions__item">
+                <div class="conditions__subtitle">Документы</div>
+                <ul class="conditions__list">
+                  <li class="conditions__list-item">Паспорт</li>
+                  <li class="conditions__list-item">Снилс</li>
+                  <li class="conditions__list-item">ОКБ</li>
+                  <li class="conditions__list-item">НБКИ</li>
+                  <li class="conditions__list-item">Права (при наличии)</li>
+                  <li class="conditions__list-item">Свидетельство на право собственности / Выписка из ЕГРН</li>
+                </ul>
+                <a href="#" class="conditions__link">Как скачать выписку?</a>
               </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
+              <div class="conditions__item-btn">
+                <a href="#" class="conditions__btn">Получить кредит</a>
+              </div>
             </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title">
-                Кредитование юридических лиц с залогом
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                500 тыс ₽ – 200 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 12% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 20 лет</p>
-                </div>
-              </div>
-              <div class="item-services__list">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Без перевода оборотов в банк
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title item-services__title--one-line">
-                Кредитование ИП без залога
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                500 тыс ₽ – 30 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 15% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 3х лет</p>
-                </div>
-              </div>
-              <div class="item-services__list">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Без перевода оборотов в банк
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title item-services__title--one-line">
-                Кредитование ИП с залогом
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                500 тыс ₽ – 100 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 12% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 20 лет</p>
-                </div>
-              </div>
-              <div class="item-services__list">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Без перевода оборотов в банк
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title">
-                Кредитование ИП и бизнеса под залог коммерческой недвижимости
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                500 тыс ₽ – 200 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 12% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 20 лет</p>
-                </div>
-              </div>
-              <div class="item-services__list">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Без перевода оборотов в банк
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-          </div>
-          <div class="services__items">
-            <div class="services__item item-services">
-              <h3 class="item-services__title">
-                Банковское кредитование физических лиц под залог квартиры
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                До 100 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 12% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 20 лет</p>
-                </div>
-              </div>
-              <div class="item-services__list item-services__list--center">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title">
-                Банковское кредитование физических лиц под залог комнаты
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                До 30 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 12% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 20 лет</p>
-                </div>
-              </div>
-              <div class="item-services__list item-services__list--center">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title">
-                Банковское кредитование физических лиц под залог машиноместа
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                До 15 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 12% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 20 лет</p>
-                </div>
-              </div>
-              <div class="item-services__list item-services__list--center">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title">
-                Банковское кредитование физических лиц под залог загородной
-                недвижимости
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                До 150 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 12% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 20 лет</p>
-                </div>
-              </div>
-              <div class="item-services__list item-services__list--center">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-          </div>
-          <div class="services__items">
-            <div class="services__item item-services">
-              <h3 class="item-services__title">
-                Кредитование под залог квартиры от частного инвестора
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                500 тыс ₽ – 100 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 15% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 5ти лет</p>
-                </div>
-              </div>
-              <div class="item-services__list">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Без перевода оборотов в банк
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title">
-                Кредитования под залог комнаты от частного инвестора
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                500 тыс ₽ – 30 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 15% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 5ти лет</p>
-                </div>
-              </div>
-              <div class="item-services__list">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Без перевода оборотов в банк
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title">
-                Кредитование под залог машиноместа от частного инвестора
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                500 тыс ₽ – 15 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 15% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 5ти лет</p>
-                </div>
-              </div>
-              <div class="item-services__list">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Без перевода оборотов в банк
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title">
-                Кредитования под залог загородной недвижимости от частного
-                инвестора
-              </h3>
-              <p class="item-services__subtitle">Сумма кредита</p>
-              <p class="item-services__amount item-services__amount--main">
-                500 тыс ₽ – 150 млн ₽
-              </p>
-              <div class="item-services__info">
-                <div>
-                  <p class="item-services__subtitle">Процентная ставка</p>
-                  <p class="item-services__amount">от 15% годовых</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Срок</p>
-                  <p class="item-services__amount">До 5ти лет</p>
-                </div>
-              </div>
-              <div class="item-services__list">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Любая цель</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">По 2м документам</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Без перевода оборотов в банк
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-          </div>
-          <div class="services__items">
-            <div class="services__item item-services">
-              <h3 class="item-services__title">Срочный выкуп квартиры</h3>
-              <div class="item-services__info item-services__info--center">
-                <div>
-                  <p class="item-services__subtitle">Процент выкупа</p>
-                  <p class="item-services__amount">до 90% рыночной стоимости</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Сроки выкупа</p>
-                  <p class="item-services__amount">до 3х дней</p>
-                </div>
-              </div>
-              <div class="item-services__list item-services__list--center">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Аванс в день обращения</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Недвижимость в любом состоянии
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title">Срочный выкуп комнаты</h3>
-              <div class="item-services__info item-services__info--center">
-                <div>
-                  <p class="item-services__subtitle">Процент выкупа</p>
-                  <p class="item-services__amount">до 90% рыночной стоимости</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Сроки выкупа</p>
-                  <p class="item-services__amount">до 3х дней</p>
-                </div>
-              </div>
-              <div class="item-services__list item-services__list--center">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Аванс в день обращения</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Недвижимость в любом состоянии
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title">Срочный выкуп квартиры</h3>
-              <div class="item-services__info item-services__info--center">
-                <div>
-                  <p class="item-services__subtitle">Процент выкупа</p>
-                  <p class="item-services__amount">до 90% рыночной стоимости</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Сроки выкупа</p>
-                  <p class="item-services__amount">до 3х дней</p>
-                </div>
-              </div>
-              <div class="item-services__list item-services__list--center">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Аванс в день обращения</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Недвижимость в любом состоянии
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-            <div class="services__item item-services">
-              <h3 class="item-services__title">Срочный выкуп комнаты</h3>
-              <div class="item-services__info item-services__info--center">
-                <div>
-                  <p class="item-services__subtitle">Процент выкупа</p>
-                  <p class="item-services__amount">до 90% рыночной стоимости</p>
-                </div>
-                <div>
-                  <p class="item-services__subtitle">Сроки выкупа</p>
-                  <p class="item-services__amount">до 3х дней</p>
-                </div>
-              </div>
-              <div class="item-services__list item-services__list--center">
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">Аванс в день обращения</p>
-                </div>
-                <div>
-                  <div class="item-services__circle"></div>
-                  <p class="item-services__text">
-                    Недвижимость в любом состоянии
-                  </p>
-                </div>
-              </div>
-              <a href="#" class="item-services__btn">Подробнее</a>
-            </div>
-          </div>
         </div>
       </section>
-      <section class="credit-features">
+      <section class="benefits">
         <div class="container">
-          <h2 class="credit-features__title">
-            Знаем, как получить кредит
-            <span class="text--semibold"
-              >на максимальную сумму и с минимальной процентной ставкой</span
-            >
+          <h2 class="benefits__title">
+            <span class="text--semibold">Больше никаких отказов!</span> <br />
+            Выработали схему работы с банками –
+            <span class="text--semibold">одобряют 9/10 поданных заявок</span>
           </h2>
-          <div class="credit-features__items">
-            <div class="credit-features__item">
-              <div class="credit-features__top">
-                <div class="credit-features__circle"></div>
-                <h3 class="credit-features__subtitle">
-                  Добьемся индивидуальных условий
+          <div class="benefits__items">
+            <div class="benefits__item">
+              <div class="benefits__item-top">
+                <div class="benefits__circle"></div>
+                <h3 class="benefits__subtitle">
+                  Точечный подбор банков или частного инвестора для
+                  максимального шанса одобрения
                 </h3>
               </div>
-              <p class="credit-features__text">
-                Согласовываем индивидуальную ставку, помогаем с поискам залога и
-                поручителей, поможем получить максимальную сумму
+              <p class="benefits__text">
+                Мы не делаем массовых рассылок. Вместо этого
+                <span class="text--semibold"
+                  >тщательно изучаем ситуацию клиента и подбираем банк,</span
+                >
+                соответствующий его профилю на 100%.
               </p>
             </div>
-            <div class="credit-features__item">
-              <div class="credit-features__top">
-                <div class="credit-features__circle"></div>
-                <h3 class="credit-features__subtitle">
-                  Сэкономим время и деньги на звонках и поездках в банк
+            <div class="benefits__item">
+              <div class="benefits__item-top">
+                <div class="benefits__circle"></div>
+                <h3 class="benefits__subtitle">
+                  Оплата только после выдачи кредита
                 </h3>
               </div>
-              <p class="credit-features__text">
-                Всю работу возьмет на себя ваш личный менеджер
+              <p class="benefits__text">
+                Никаких предоплат и скрытых комиссий. Вы платите лишь после
+                того, как деньги уже у вас на счету
               </p>
             </div>
-            <div class="credit-features__item">
-              <div class="credit-features__top">
-                <div class="credit-features__circle"></div>
-                <h3 class="credit-features__subtitle">
-                  Не беремся за работу, если не уверены
+            <div class="benefits__item">
+              <div class="benefits__item-top">
+                <div class="benefits__circle"></div>
+                <h3 class="benefits__subtitle">
+                  Полное сопровождение на всех этапах
                 </h3>
               </div>
-              <p class="credit-features__text">
-                Мы заранее согласовываем условия с банками и только после этого
-                начинаем работу
+              <p class="benefits__text">
+                Наши менеджеры помогают собрать документы, правильно подать
+                заявку, при необходимости взаимодействуют с банком –
+                <span class="text--semibold"
+                  >вам остается только подписать договор</span
+                >
               </p>
             </div>
-            <div class="credit-features__item">
-              <div class="credit-features__top">
-                <div class="credit-features__circle"></div>
-                <h3 class="credit-features__subtitle">
-                  Представляем ваши интересы
-                </h3>
+            <div class="benefits__item">
+              <div class="benefits__item-top">
+                <div class="benefits__circle"></div>
+                <h3 class="benefits__subtitle">Более 3241 успешных кредитов</h3>
               </div>
-              <p class="credit-features__text">
-                Решаем спорные вопросы и лично представляем ваши интересы,
-                участвуем в переговорах с банками
-              </p>
-            </div>
-            <div class="credit-features__item">
-              <div class="credit-features__top">
-                <div class="credit-features__circle"></div>
-                <h3 class="credit-features__subtitle">
-                  Проведем бесплатный анализ документов
-                </h3>
+              <div class="benefits__text">
+                За 4 года работы мы помогли сотням компаний получить
+                финансирование на сумму
+                <span class="text--semibold">свыше 5 млрд рублей</span>
               </div>
-              <p class="credit-features__text">
-                При заключении договора мы проведем бесплатную оценку вашего
-                финансового состояния
-              </p>
-            </div>
-            <div class="credit-features__item">
-              <div class="credit-features__top">
-                <div class="credit-features__circle"></div>
-                <h3 class="credit-features__subtitle">
-                  Оплата услуг только после получения финансирования
-                </h3>
-              </div>
-              <p class="credit-features__text">
-                Наши услуги и вовсе могут получиться бесплатными при
-                согласовании большей суммы кредита, чем вам требовалось
-                изначально
-              </p>
-            </div>
-            <div class="credit-features__item">
-              <div class="credit-features__top">
-                <div class="credit-features__circle"></div>
-                <h3 class="credit-features__subtitle">
-                  Дадим экспертные рекомендации
-                </h3>
-              </div>
-              <p class="credit-features__text">
-                Предоставим рекомендации по дальнейшему улучшению показателей
-                финансовой отчетности, по платежной дисциплине, оптимизации
-                расходов
-              </p>
-            </div>
-            <div class="credit-features__top credit-features__top--individual">
-              <div class="credit-features__circle"></div>
-              <h3 class="credit-features__subtitle">
-                Также поможем привлечь финансирование от
-                <span class="text--underline">частных инвесторов</span>
-              </h3>
             </div>
           </div>
         </div>
@@ -1442,39 +817,96 @@
           </div>
         </div>
       </section>
-      <section class="help">
+      <section class="other">
         <div class="container">
-          <div class="help__inner">
-            <div class="help__left">
-              <p class="help__text">
-                Нет времени на поиск финансирования, а деньги нужны уже сегодня?
-              </p>
-              <h2 class="help__title">
-                Получите ТОП-5 предложений по кредиту на 17.09 за 1 час
-              </h2>
-              <label class="help__label" for="status2">Вы:</label>
-              <div class="help__select-wrapper">
-                <select class="help__select" name="status2" id="status2">
-                  <option value="privatePerson">Частное лицо</option>
-                </select>
-                <img class="help__arr" src="img/arr-down.svg" alt="" />
+          <h2 class="other__title">Другие варианты кредитования для бизнеса</h2>
+          <div class="other__slider">
+            <div class="other__track">
+              <div class="other__slide">
+                <div class="services__item item-services ">
+                  <h3 class="item-services__title">
+                    Кредитование юридических лиц с залогом
+                  </h3>
+                  <p class="item-services__subtitle">Сумма кредита</p>
+                  <p class="item-services__amount item-services__amount--main">
+                    500 тыс ₽ – 200 млн ₽
+                  </p>
+                  <div class="item-services__info">
+                    <div>
+                      <p class="item-services__subtitle">Процентная ставка</p>
+                      <p class="item-services__amount">от 12% годовых</p>
+                    </div>
+                    <div>
+                      <p class="item-services__subtitle">Срок</p>
+                      <p class="item-services__amount">До 20 лет</p>
+                    </div>
+                  </div>
+                  <div class="item-services__list">
+                    <div>
+                      <div class="item-services__circle"></div>
+                      <p class="item-services__text">Любая цель</p>
+                    </div>
+                    <div>
+                      <div class="item-services__circle"></div>
+                      <p class="item-services__text">По 2м документам</p>
+                    </div>
+                    <div>
+                      <div class="item-services__circle"></div>
+                      <p class="item-services__text">
+                        Без перевода оборотов в банк
+                      </p>
+                    </div>
+                  </div>
+                  <a href="#" class="item-services__btn">Подробнее</a>
+                </div>
               </div>
-              <label class="help__label help__label--phone" for="phone2"
-                >Введите номер телефона</label
-              >
-              <div>
-                <input
-                  type="number"
-                  id="phone2"
-                  name="phone2"
-                  class="help__input"
-                  placeholder="+7 (___) ___-__-__" />
-                <a href="#" class="help__btn">Получить консультацию</a>
+              <div class="other__slide">
+                <div class="services__item item-services">
+                  <h3 class="item-services__title item-services__title--one-line">
+                    Кредитование ИП без залога
+                  </h3>
+                  <p class="item-services__subtitle">Сумма кредита</p>
+                  <p class="item-services__amount item-services__amount--main">
+                    500 тыс ₽ – 30 млн ₽
+                  </p>
+                  <div class="item-services__info">
+                    <div>
+                      <p class="item-services__subtitle">Процентная ставка</p>
+                      <p class="item-services__amount">от 15% годовых</p>
+                    </div>
+                    <div>
+                      <p class="item-services__subtitle">Срок</p>
+                      <p class="item-services__amount">До 3х лет</p>
+                    </div>
+                  </div>
+                  <div class="item-services__list">
+                    <div>
+                      <div class="item-services__circle"></div>
+                      <p class="item-services__text">Любая цель</p>
+                    </div>
+                    <div>
+                      <div class="item-services__circle"></div>
+                      <p class="item-services__text">По 2м документам</p>
+                    </div>
+                    <div>
+                      <div class="item-services__circle"></div>
+                      <p class="item-services__text">
+                        Без перевода оборотов в банк
+                      </p>
+                    </div>
+                  </div>
+                  <a href="#" class="item-services__btn">Подробнее</a>
+                </div>
               </div>
             </div>
-            <div class="help__right">
-              <img src="img/expert.svg" alt="" />
-            </div>
+          </div>
+          <div class="other__btns">
+            <button class="other__btn other__btn--prev">
+              <img src="img/arr-left.svg" alt="" />
+            </button>
+            <button class="other__btn other__btn--next">
+              <img src="img/arr-right.svg" alt="" />
+            </button>
           </div>
         </div>
       </section>

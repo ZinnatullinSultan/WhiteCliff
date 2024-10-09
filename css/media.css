@@ -51,6 +51,12 @@
     gap: 155px;
   }
 }
+@media(max-width: 1200px){
+  .partner-member__items{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
 @media(max-width: 1130px) {
   .header__calc-btn{
     order: 1;
@@ -175,6 +181,10 @@
     margin-left: 30px;
     gap: 183px;
   }
+  .contacts__box{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media(max-width: 900px) {
   .benefits__circle {
@@ -198,7 +208,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  .calc-section, .services, .credit-features, .statistics, .partners__top, .partners, .steps, .reviews, .faq, .help, .conditions, .articles, .consultation, .benefits, .deposit, .advantages, .private-conditions__title, .private-conditions, .types {
+  .calc-section, .services, .credit-features, .statistics, .partners__top, .partners, .steps, .reviews, .faq, .help, .conditions, .articles, .consultation, .benefits, .deposit, .advantages, .private-conditions__title, .private-conditions, .types, .test, .thanks, .hero-coop, .partner-member, .hero-coop, .requisites {
     margin-bottom: 42px;
   }
   .partners__logos{
@@ -258,10 +268,14 @@
     gap: 20px;
   }
   .steps--buyout .steps__items--bottom{
-    margin-right: 51px;
+    margin-right: 0;
   }
   .steps--buyout .steps__items{
     gap: 10px;
+  }
+  .steps--buyout .steps__items, .steps--buyout .steps__items--bottom{
+    margin-left: 0;
+    justify-content: center;
   }
 }
 @media(max-width: 860px) {
@@ -310,6 +324,17 @@
   .deposit__items{
     grid-template-columns: repeat(2, 1fr);
   }
+  .test__btns{
+    position: static;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: auto;
+    margin-top: 20px;
+  }
+  .test__btn:first-child{
+    margin-bottom: 0;
+  }
 }
 @media(max-width: 800px) {
   .menu{
@@ -342,7 +367,7 @@
   .hero__title-box{
     margin-bottom: 30px;
   }
-  .hero__title, .benefits__title, .calc-section__title, .services__title, .credit-features__title, .statistics__title, .statistics__title, .partners__title, .partners__subtitle, .steps__title, .conditions__title, .other__title, .private-conditions__title, .types__title {
+  .hero__title, .benefits__title, .calc-section__title, .services__title, .credit-features__title, .statistics__title, .statistics__title, .partners__title, .partners__subtitle, .steps__title, .conditions__title, .other__title, .private-conditions__title, .types__title, .test__title, .thanks__title, .hero-coop__title {
     font-size: 28px;
   }
   .benefits__title, .services__title, .credit-features__title, .statistics__title, .partners__subtitle, .other__title, .types__title {
@@ -360,7 +385,7 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
-  .statistics__text, .statistics__amount, .types__subtitle{
+  .statistics__text, .statistics__amount, .types__subtitle, .thanks__text, .hero-coop__text{
     font-size: 22px;
   }
   .statistics__value{
@@ -391,15 +416,23 @@
   .help__right img{
     height: 350px;
   }
-  .breadcrumb, .types__subtitle{
+  .breadcrumb, .types__subtitle, .hero-coop__text{
     margin-bottom: 30px;
   }
   .other__btns{
     margin-top: 0;
   }
-  /* .private-conditions__item{
-    min-width: 0;
-  } */
+  .hero-coop__subtitle, .contacts__number{
+    font-size: 24px;
+    /* margin-bottom: 30px; */
+  }
+  .contacts__left{
+    padding-top: 0;
+  }
+  .contacts__right {
+    border-radius: 20px;
+    width: 100%;
+  }
 }
 @media(max-width: 600px) {
   .header__right {
@@ -482,6 +515,65 @@
   .advantages__text{
     font-size: 16px;
   }
+  .test__bottom{
+    justify-content: center;
+  }
+  .test__btns{
+    flex-direction: column;
+  }
+  .test__btn{
+    padding: 14px;
+    max-width: 300px;
+    text-align: center;
+  }
+  .question__options, .partner-member__title{
+    margin-bottom: 20px;
+  }
+  .partner-member__subtitle{
+    font-size: 20px;
+  }
+  .partner-member__text{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .partner-member__list {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .partner-member__btn {
+    font-size: 16px;
+    padding: 15px;
+  }
+  .partner-member__inner{
+    padding: 16px 24px;
+  }
+  .contacts__socials img{
+    width: 34px;
+    height: 34px;
+  }
+}
+@media(max-width: 562px){
+  .question__options{
+    justify-content: center;
+    gap: 15px;
+  }
+  .question__title{
+    text-align: center;
+  }
+  .partner-member__item{
+    flex-direction: column;
+  }
+  .partner-member__title{
+    font-size: 28px;
+  }
+  .partner-member__left{
+    border-radius: 20px 20px 0 0;
+    height: 200px;
+    width: 100%;
+  }
+  .partner-member__items{
+    gap: 20px;
+  }
 }
 @media(max-width: 530px) {
   .hero__btn {
@@ -493,10 +585,10 @@
     flex-direction: column;
     gap: 20px;
   }
-  .hero__title, .benefits__title, .calc-section__title, .services__title, .item-services__subtitle, .statistics__text, .steps__top-text, .articles__text, .articles__info, .articles__link, .help__btn, .conditions__list, .private-conditions__text {
+  .hero__title, .benefits__title, .calc-section__title, .services__title, .item-services__subtitle, .statistics__text, .steps__top-text, .articles__text, .articles__info, .articles__link, .help__btn, .conditions__list, .private-conditions__text, .hero-coop__subtitle, .hero-coop__form-text, .contacts__number, .contacts__email, .breadcrumb, .requisites__value {
     font-size: 18px;
   }
-  .calc-section__title{
+  .calc-section__title, .hero-coop__subtitle{
     margin-bottom: 20px;
   }
   .hero__subtitle {
@@ -507,7 +599,7 @@
     gap: 14px;
     font-size: 16px;
   }
-  .benefits__subtitle, .calc__label, .results__amount, .services__text, .consultation__text {
+  .benefits__subtitle, .calc__label, .results__amount, .services__text, .consultation__text, .hero-coop__text, .contacts__timetable, .contacts__address, .requisites__key {
     font-size: 16px;
   }
   .benefits__text, .calc__hint, .results__title {
@@ -541,10 +633,10 @@
     padding: 12px;
     font-size: 16px;
   }
-  .calc__input, .results__input {
+  .calc__input, .results__input, .hero-coop__btn {
     padding: 14px;
   }
-  .calc__field{
+  .calc__field, .contacts__number, .contacts__timetable, .contacts__email{
     margin-bottom: 15px;
   }
   .results{
@@ -560,7 +652,7 @@
     font-size: 22px;
     margin-bottom:25px;
   }
-  .item-services__amount, .credit-features__title, .statistics__title, .partners__title, .partners__subtitle, .steps__title, .consultation__title, .reviews__title, .articles__subtitle, .help__text, .conditions__subtitle, .private-conditions__title, .conditions__title {
+  .item-services__amount, .credit-features__title, .statistics__title, .partners__title, .partners__subtitle, .steps__title, .consultation__title, .reviews__title, .articles__subtitle, .help__text, .conditions__subtitle, .private-conditions__title, .conditions__title, .test__title, .hero-coop__title, .requisites__title {
     font-size: 22px;
   }
   .item-services__amount--main{
@@ -623,6 +715,35 @@
   .private-conditions__item{
     min-width: 0;
   }
+  .test__top, .question__title, .test__title{
+    margin-bottom: 20px;
+  }
+  .question__options{
+    gap: 10px;
+  }
+  .question__item{
+    padding: 15px 10px;
+    height: auto;
+  }
+  .question__item input[type='radio']{
+    width: 15px;
+    height: 15px;
+  }
+  .question{
+    margin-bottom: 10px;
+  }
+  .test__bottom{
+    gap: 20px;
+  }
+  .test__progressbar{
+    width: 240px;
+  }
+  .test__progressbar::before{
+    width: 80px;
+  }
+  .question__title{
+    font-size: 18px;
+  }
 }
 @media(max-width: 400px) {
   .menu__item {
@@ -677,6 +798,9 @@
   }
   .types__item-title{
     margin-bottom: 10px;
+  }
+  .deposit__items--flex .deposit__item{
+    min-width: fit-content;
   }
 }
 @media(max-width: 355px) {
