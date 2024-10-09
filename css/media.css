@@ -1,0 +1,693 @@
+@media(max-width: 1340px) {
+  .calc__field div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .calc__input-wrapper::after {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .results {
+    right: 22px;
+  }
+  .item-services__list {
+    flex-wrap: wrap;
+  }
+  .item-services__list--center {
+    flex-wrap: nowrap;
+  }
+  .partners__top{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .partners__title{
+    max-width: fit-content;
+  }
+  .steps__img{
+    margin-left: 0;
+    width: 100%;
+  }
+  .steps__items, .steps--buyout .steps__items{
+    margin-left: 0;
+  }
+  .steps__items--bottom .steps__item:nth-child(1){
+    margin-right: 210px;
+  }
+  .steps__items--bottom .steps__item:nth-child(2){
+    margin-right: 200px;
+  }
+  .steps--buyout .steps__item:nth-child(1), .steps--buyout .steps__item:nth-child(2), .steps--buyout .steps__items--bottom  .steps__item:nth-child(3){
+    margin-right: 0;
+  }
+  .deposit__items{
+    gap: 20px 25px;
+  }
+  .steps--buyout .steps__items{
+    gap: 205px;
+  }
+  .steps--buyout .steps__items--bottom{
+    gap: 155px;
+  }
+}
+@media(max-width: 1130px) {
+  .header__calc-btn{
+    order: 1;
+  }
+  .header__consultation-btn{
+    order: 2;
+  }
+  .benefits__subtitle {
+    font-size: 20px;
+  }
+  .benefits__text {
+    font-size: 18px;
+  }
+  .calc__input {
+    width: auto;
+  }
+  .results {
+    max-width: 400px;
+  }
+  .services__tab-btn, .consultation__text {
+    font-size: 18px;
+  }
+  .services__tabs {
+    gap: 16px;
+  }
+  .services__text {
+    font-size: 24px;
+  }
+  .item-services__title--one-line, .consultation__text, .consultation__select-wrapper, .help__select-wrapper {
+    margin-bottom: 34px;
+  }
+  .item-services__title, .consultation__title {
+    font-size: 26px;
+  }
+  .item-services__list--center {
+    gap: 20px 35px;
+  }
+  .credit-features__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .statistics__inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .statistics__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-bottom: 0;
+  }
+  .statistics__img{
+    height: 400px;
+    max-width: 500px;
+  }
+  .partners__logos{
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .steps__items--bottom .steps__item:nth-child(1){
+    margin-right: 150px;
+  }
+  .steps__items--bottom .steps__item:nth-child(2){
+    margin-right: 150px;
+  }
+  .consultation__left{
+    max-width: 533px;
+  }
+  .consultation__label--phone + div, .help__label--phone + div{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .consultation__input, .help__input{
+    max-width: 444px;
+  }
+  .consultation__right, .help__right{
+    padding-top: 0;
+    align-self: center;
+  }
+  .consultation__right img{
+    height: 400px;
+  }
+  .reviews__slide{
+    flex: 0 0 50%;
+  }
+  .help__title{
+    font-size: 30px;
+  }
+  .help__text{
+    font-size: 28px;
+  }
+  .hero__title{
+    max-width: 850px;
+  }
+  .other__slide {
+    flex: 0 0 100%;
+    justify-content: center;
+  }
+  .item-services{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .deposit__items{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero__subtitle--phys{
+    right: -20px;
+    bottom: -7px;
+  }
+  .conditions__btn{
+    margin-left: 0;
+  }
+  .steps__text{
+    font-size: 16px;
+  }
+  .steps--buyout .steps__item:nth-child(1), .steps--buyout .steps__item:nth-child(2), .steps--buyout .steps__items--bottom  .steps__item:nth-child(3){
+    margin-right: 0;
+  }
+  .steps--buyout .steps__items--bottom{
+    margin-right: 51px;
+  }
+  .steps--buyout .steps__items{
+    margin-left: 30px;
+    gap: 183px;
+  }
+}
+@media(max-width: 900px) {
+  .benefits__circle {
+    min-width: 62px;
+    min-height: 62px;
+  }
+  .benefits__subtitle {
+    font-size: 18px;
+  }
+  .benefits__text {
+    font-size: 16px;
+  }
+  .benefits__item{
+    padding: 30px 20px;
+  }
+  .services__items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 22px 44px;
+  }
+  .item-services__list--center {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .calc-section, .services, .credit-features, .statistics, .partners__top, .partners, .steps, .reviews, .faq, .help, .conditions, .articles, .consultation, .benefits, .deposit, .advantages, .private-conditions__title, .private-conditions, .types {
+    margin-bottom: 42px;
+  }
+  .partners__logos{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .steps__top{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  .steps__img{
+    display: none;
+  }
+  .steps__item:nth-child(1), .steps__item:nth-child(4), .steps__item:nth-child(3), .steps__items--bottom .steps__item:nth-child(3){
+    transform: none;
+  }
+  .steps__item{
+    margin-right: 0 !important;
+  }
+  .steps__circle{
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 10px;
+  }
+  .steps__text{
+    font-size: 16px;
+  }
+  .steps__items{
+    gap: 15px;
+    margin-bottom: 80px;
+  }
+  .consultation__inner, .help__inner{
+    flex-direction: column-reverse;
+  }
+  .consultation__left{
+    max-width: fit-content;
+  }
+  .reviews__title{
+    font-size: 32px;
+  }
+  .help__right img{
+    width: 100%;
+  }
+  .top-footer__inner{
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .top-footer__inner .logo{
+    margin-right: 0;
+  }
+  .main-footer__info{
+    gap: 25px;
+  }
+  .types__items{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .steps--buyout .steps__items--bottom{
+    margin-right: 51px;
+  }
+  .steps--buyout .steps__items{
+    gap: 10px;
+  }
+}
+@media(max-width: 860px) {
+  .hero__content {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .hero__title {
+    font-size: 36px;
+  }
+  .hero{
+    margin-bottom: 50px;
+  }
+  .results{
+    position: static;
+    margin: 0 auto;
+  }
+  .calc__fields{
+    text-align: center;
+  }
+  .calc__field div {
+    align-items: center;
+  }
+  .calc__input-wrapper, .calc__input {
+    width: 100%;;
+  }
+  .calc__field:last-child{
+    margin-bottom: 20px;
+  }
+  .calc{
+    padding-bottom: 0;
+  }
+  .results__title, .results__amount, .results__box {
+    margin-bottom: 10px;
+  }
+  .calc__label {
+    font-size: 18px;
+  }
+  .results__btn {
+    padding: 20px;
+  }
+  .hero__subtitle {
+    position: static;
+    margin-top: 15px;
+  }
+  .deposit__items{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media(max-width: 800px) {
+  .menu{
+    justify-content: center;
+  }
+  .benefits__items {
+    gap: 32px 14px;
+  }
+  .services__tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .partners__slide{
+    flex: 0 0 50%;
+  }
+  .main-footer__columns{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+  }
+}
+@media(max-width: 680px) {
+  .menu{
+    justify-content: center;
+  }
+  .hero__list {
+    grid-template-columns: repeat(1, 1fr);
+    /* justify-items: center; */
+    margin-bottom: 50px;
+  }
+  .hero__title-box{
+    margin-bottom: 30px;
+  }
+  .hero__title, .benefits__title, .calc-section__title, .services__title, .credit-features__title, .statistics__title, .statistics__title, .partners__title, .partners__subtitle, .steps__title, .conditions__title, .other__title, .private-conditions__title, .types__title {
+    font-size: 28px;
+  }
+  .benefits__title, .services__title, .credit-features__title, .statistics__title, .partners__subtitle, .other__title, .types__title {
+    margin-bottom: 20px;
+  }
+  .benefits__items {
+    grid-template-columns: 1fr;
+  }
+  .services__tabs-box {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .credit-features__items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .statistics__text, .statistics__amount, .types__subtitle{
+    font-size: 22px;
+  }
+  .statistics__value{
+    font-size: 18px;
+  }
+  .partners__top{
+    gap: 10px;
+  }
+  .steps__hint{
+    padding: 21px 15px;
+    gap: 20px;
+  }
+  .steps__top-circle{
+    min-width: 55px;
+    min-height: 55px;
+  }
+  .reviews__slide{
+    flex: 0 0 100%;
+  }
+  .reviews__top{
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  .reviews__yandex > div{
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .help__right img{
+    height: 350px;
+  }
+  .breadcrumb, .types__subtitle{
+    margin-bottom: 30px;
+  }
+  .other__btns{
+    margin-top: 0;
+  }
+  /* .private-conditions__item{
+    min-width: 0;
+  } */
+}
+@media(max-width: 600px) {
+  .header__right {
+    gap: 8px;
+  }
+  .header__number {
+    font-size: 12px;
+  }
+  .header__timetable {
+    font-size: 10px;
+  }
+  .header__calc-btn, .header__consultation-btn {
+    font-size: 12px;
+    padding: 12px 5px;
+  }
+  .logo__link img{
+    width: 150px;
+  }
+  .header__social img{
+    width: 22px;
+  }
+  .menu__item--list {
+    font-size: 14px;
+    padding: 13px 13px;
+  }
+  .menu__item--list:nth-child(3) {
+    margin-right: 0;
+  }
+  .partners__logos{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+  }
+  .steps__items{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .faq__title{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .faq__subtitle, .main-footer__subtitle{
+    font-size: 18px;
+  }
+  .faq__text{
+    font-size: 16px;
+  }
+  .faq__item{
+    padding: 22px 20px;
+  }
+  .main-footer__columns{
+    font-size: 14px;
+  }
+  .main-footer__subtitle, .deposit__title{
+    margin-bottom: 20px;
+  }
+  .deposit__items{
+    gap: 10px;
+  }
+  .deposit__item{
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+  }
+  .deposit__circle{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  .deposit__text{
+    font-size: 20px;
+  }
+  .advantages__inner{
+    gap: 20px;
+  }
+  .advantages__circle{
+    width: 50px;
+    height: 50px;
+  }
+  .advantages__text{
+    font-size: 16px;
+  }
+}
+@media(max-width: 530px) {
+  .hero__btn {
+    padding: 20px 50px;
+    width: auto;
+    font-size: 18px;
+  }
+  .hero__btn-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero__title, .benefits__title, .calc-section__title, .services__title, .item-services__subtitle, .statistics__text, .steps__top-text, .articles__text, .articles__info, .articles__link, .help__btn, .conditions__list, .private-conditions__text {
+    font-size: 18px;
+  }
+  .calc-section__title{
+    margin-bottom: 20px;
+  }
+  .hero__subtitle {
+    position: static;
+    margin-top: 15px;
+  }
+  .hero__item {
+    gap: 14px;
+    font-size: 16px;
+  }
+  .benefits__subtitle, .calc__label, .results__amount, .services__text, .consultation__text {
+    font-size: 16px;
+  }
+  .benefits__text, .calc__hint, .results__title {
+    font-size: 14px;
+  }
+  .benefits__circle, .private-conditions__circle {
+    min-width: 32px;
+    min-height: 32px;
+  }
+  .benefits__item-top {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .benefits__items {
+    gap: 22px;
+  }
+  .benefits{
+    margin-bottom: 50px;
+  }
+  .results__box {
+    flex-direction: column;
+    gap: 0;
+  }
+  .results{
+    text-align: center;
+  }
+  .results__title{
+    margin-bottom: 5px;
+  }
+  .results__btn{
+    padding: 12px;
+    font-size: 16px;
+  }
+  .calc__input, .results__input {
+    padding: 14px;
+  }
+  .calc__field{
+    margin-bottom: 15px;
+  }
+  .results{
+    padding: 15px 22px 32px 22px;
+  }
+  .calc{
+    padding: 30px 20px 0;
+  }
+  .calc-section__text{
+    font-size: 10px;
+  }
+  .item-services__title, .help__title{
+    font-size: 22px;
+    margin-bottom:25px;
+  }
+  .item-services__amount, .credit-features__title, .statistics__title, .partners__title, .partners__subtitle, .steps__title, .consultation__title, .reviews__title, .articles__subtitle, .help__text, .conditions__subtitle, .private-conditions__title, .conditions__title {
+    font-size: 22px;
+  }
+  .item-services__amount--main{
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .item-services__info, .articles__info {
+    margin-bottom: 35px;
+  }
+  .item-services__btn {
+    font-size: 22px;
+    padding: 20px;
+  }
+  .item-services {
+    padding: 31px 31px 30px;
+  }
+  .statistics__right {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    padding: 20px 10px ;
+  }
+  .statistics__item {
+    margin-bottom: 10px;
+  }
+  .statistics__img-wrapper{
+    padding-right: 0;
+  }
+  .statistics__img{
+    height: 300px;
+  }
+  .partners__slide{
+    flex: 0 0 100%;
+    height: 350px;
+    /* margin-bottom: 20px; */
+  }
+  .partners__slider, .reviews__slider{
+    margin-bottom: 10px;
+  }
+  .articles__title{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .articles__item{
+    padding: 32px 32px 32px 27px;
+  }
+  .conditions__item {
+    padding: 21px 41px 21px 22px;
+    min-width: 0;
+  }
+  .conditions__items {
+    gap: 30px;
+  }
+  .conditions__btn{
+    margin-left: 0;
+  }
+  .private-conditions__items{
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  .private-conditions__item{
+    min-width: 0;
+  }
+}
+@media(max-width: 400px) {
+  .menu__item {
+    font-size: 12px;
+  }
+  .approval {
+    font-size: 18px;
+    padding: 16px 43px;
+    max-width: 251px;
+    margin-bottom: 40px;
+  }
+  .header{
+    margin-bottom: 30px;
+  }
+  .item-services__info {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .item-services__list{
+    margin-bottom: 25px;
+  }
+  .credit-features__subtitle, .types__subtitle, .types__item-title{
+    font-size: 18px;
+  }
+  .credit-features__text{
+    font-size: 14px;
+  }
+  .footer__btn{
+    font-size: 18px;
+    margin-left: 0;
+    padding: 10px 20px;
+  }
+  .top-footer__inner .logo img{
+    width: 150px;
+  }
+  .other__title, .deposit__title, .types__title{
+    font-size: 22px;
+  }
+  .deposit__item{
+    padding: 10px;
+  }
+  .deposit__circle{
+    width: 50px;
+    height: 50px;
+  }
+  .deposit__text, .types__item-text{
+    font-size: 16px;
+  }
+  .types__item{
+    padding: 24px 16px;
+  }
+  .types__item-title{
+    margin-bottom: 10px;
+  }
+}
+@media(max-width: 355px) {
+  .header__right {
+    margin-bottom: 5px;
+  }
+  .header__inner{
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .header__calc-btn, .header__consultation-btn {
+    margin-bottom: 5px;
+  }
+}
