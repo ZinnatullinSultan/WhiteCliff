@@ -155,6 +155,14 @@ input {
 .menu__item {
   font-size: 16px;
   margin-right: 28px;
+  position: relative;
+}
+nav li a:hover{
+  transition: color .3s ease;
+  color: #747474;
+}
+.menu__link > img{
+  transition: transform .3s ease;
 }
 .menu__item:nth-last-child(1) {
   margin-right: 0;
@@ -173,6 +181,39 @@ input {
   border-radius: 0 10px 10px 0;
   margin-right: 34px;
 }
+.menu__item--list .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 428px;
+  /* right: 0; */
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+}
+.submenu--phys{
+  transform: translateX(-140px);
+}
+.submenu--buyout{
+  transform: translateX(-307px);
+}
+.submenu li{
+  margin-bottom: 15px;
+}
+.submenu li:last-child{
+  margin-bottom: 0;
+}
+.menu__item--list:hover .submenu {
+  display: block;
+}
+
+.menu__item--list:hover img {
+  transform: rotate(-180deg);
+}
+
 .footer__top {
   background: #5f5f5f;
   padding: 28px 0;
@@ -250,6 +291,9 @@ input {
 .main-footer__privacy, .main-footer__safety{
   font-size: 14px;
   max-width: 207px;
+}
+.nav{
+  position: relative;
 }
 /* Первая страница */
 .approval {

@@ -14,12 +14,12 @@
         <div class="header__inner">
           <div class="header__left">
             <div class="logo">
-              <a href="#" class="logo__link"
+              <a href="index.html" class="logo__link"
                 ><img src="img/logo.png" alt="Логотип"
               /></a>
             </div>
           </div>
-          <a href="#" class="header__calc-btn">Калькулятор кредитования</a>
+          <a href="#calc" class="header__calc-btn">Калькулятор кредитования</a>
           <a href="#" class="header__consultation-btn">Получить консультацию</a>
           <div class="header__right">
             <div class="header__contacts">
@@ -42,42 +42,64 @@
         <nav class="nav">
           <ul class="menu">
             <li class="menu__item menu__item--list">
-              <p class="menu__link">
-                Бизнесу <img src="img/arr-down.svg" alt="Стрелка вниз" />
-              </p>
+              <p class="menu__link">Бизнесу <img src="img/arr-down.svg" alt="Стрелка вниз"
+              /></p>
+              <ul class="submenu">
+                <li><a href="businessWithout.html">Кредитование юридических лиц без залога</a></li>
+                <li><a href="businessWith.html">Кредитование юридических лиц c залогом</a></li>
+                <li><a href="ipWithout.html">Кредитование ИП без залога</a></li>
+                <li><a href="ipWith.html">Кредитование ИП под залог</a></li>
+                <li><a href="businessWithEstate.html ">Кредитование бизнеса под залог коммерческой недвижимости</a></li>
+                <li><a href="physFlat.html">Кредит для физ лиц под залог квартиры</a></li>
+                <li><a href="physEstate.html">Кредит для физ лиц под залог загородной недвижимости</a></li>
+                <li><a href="physRoom.html">Кредит для физ лиц под залог комнаты</a></li>
+                <li><a href="physCarPlace.html">Кредит для физ лиц под залог машиноместа</a></li>
+              </ul>
             </li>
             <li class="menu__item menu__item--list">
-              <p class="menu__link">
-                Физ лицам <img src="img/arr-down.svg" alt="Стрелка вниз" />
-              </p>
+              <p class="menu__link"
+                >Физ лицам <img src="img/arr-down.svg" alt="Стрелка вниз"
+              /></p>
+              <ul class="submenu submenu--phys">
+                <li><a href="privateFlat.html">Кредит для физ лиц под залог квартиры от частного инвестора</a></li>
+                <li><a href="privateRoom.html">Кредит для физ лиц под залог комнаты от частного инвестора</a></li>
+                <li><a href="privateEstate.html">Кредит для физ лиц под залог загородной недвижимости от частного инвестора</a></li>
+                <li><a href="privateCarPlace.html">Кредит для физ лиц под залог машиноместа от частного инвестора</a></li>
+              </ul>
             </li>
             <li class="menu__item menu__item--list">
-              <p class="menu__link">
-                Выкуп <img src="img/arr-down.svg" alt="Стрелка вниз" />
-              </p>
+              <p class="menu__link"
+                >Выкуп <img src="img/arr-down.svg" alt="Стрелка вниз"
+              /></p>
+              <ul class="submenu submenu--buyout">
+                <li><a href="buyoutFlat.html">Срочный выкуп квартиры</a></li>
+                <li><a href="buyoutRoom.html">Срочный выкуп комнаты</a></li>
+                <li><a href="buyoutEstate.html">Срочный выкуп загородной недвижимости</a></li>
+                <li><a href="buyoutCarPlace.html">Срочный выкуп машиноместа</a></li>
+              </ul>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Преимущества</a>
+              <a href="#benefits" class="menu__link">Преимущества</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">С кем мы работаем?</a>
+              <a href="#partners" class="menu__link">С кем мы работаем?</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Услуги</a>
+              <a href="#services" class="menu__link">Услуги</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Схема работы</a>
+              <a href="#steps" class="menu__link">Схема работы</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Отзывы</a>
+              <a href="#reviews" class="menu__link">Отзывы</a>
             </li>
-            <li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
+            <li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
+            <li class="menu__item"><a href="#articles" class="menu__link">Блог</a></li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Сотрудничество</a>
+              <a href="cooperation.html" class="menu__link">Сотрудничество</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Контакты</a>
+              <a href="contacts.html" class="menu__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -142,7 +164,7 @@
           </div>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits" id="benefits">
         <div class="container">
           <h2 class="benefits__title text--semibold">
             Почему стоит выбрать именно нас для срочного выкупа комнаты
@@ -528,7 +550,7 @@
           </div>
         </div>
       </section>
-      <section class="partners">
+      <section class="partners" id="partners">
         <div class="container">
           <div class="partners__top">
             <h2 class="partners__title">Наши банки-партнеры</h2>
@@ -623,7 +645,7 @@
           </div>
         </div>
       </section>
-      <section class="steps steps--buyout">
+      <section class="steps steps--buyout" id="steps">
         <div class="container">
           <div class="steps__top">
             <h2 class="steps__title">
@@ -687,7 +709,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <div class="reviews__top">
             <h2 class="reviews__title">
@@ -727,7 +749,7 @@
           </div>
         </div>
       </section>
-      <section class="articles">
+      <section class="articles" id="articles">
         <div class="container">
           <h2 class="articles__title">Полезные статьи</h2>
           <div class="articles__items">
@@ -767,7 +789,7 @@
           </div>
         </div>
       </section>
-      <section class="faq">
+      <section class="faq" id="faq">
         <div class="container">
           <h2 class="faq__title">Часто задаваемые вопросы</h2>
           <div class="faq__items">
@@ -939,33 +961,33 @@
         <div class="container">
           <div class="top-footer__inner">
             <div class="logo">
-              <img src="img/logo.png" alt="Логотип" />
+              <a href="index.html"><img src="img/logo.png" alt="Логотип" /></a>
             </div>
             <nav class="nav">
               <ul class="menu">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Преимущества</a>
+                  <a href="#benefits" class="menu__link">Преимущества</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Услуги</a>
+                  <a href="#services" class="menu__link">Услуги</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Схема работы</a>
+                  <a href="#steps" class="menu__link">Схема работы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#reviews" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">FAQ</a>
+                  <a href="#faq" class="menu__link">FAQ</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Блог</a>
+                  <a href="#articles" class="menu__link">Блог</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Сотрудничество</a>
+                  <a href="cooperation.html" class="menu__link">Сотрудничество</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты</a>
+                  <a href="contacts.html" class="menu__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -978,33 +1000,33 @@
           <div class="main-footer__columns">
             <div class="main-footer__column">
               <h3 class="main-footer__subtitle">Кредиты для бизнеса</h3>
-              <a href="#" class="main-footer__link"
+              <a href="businessWithout.html" class="main-footer__link"
                 >Кредиты для юр. лиц без залога</a
               >
-              <a href="#" class="main-footer__link"
+              <a href="businessWith.html" class="main-footer__link"
                 >Кредиты для юр. лиц с залогом</a
               >
-              <a href="#" class="main-footer__link"
+              <a href="ipWithout.html" class="main-footer__link"
                 >Кредиты для ИП без залога</a
               >
-              <a href="#" class="main-footer__link">Кредиты для ИП с залогом</a>
-              <a href="#" class="main-footer__link"
+              <a href="ipWith.html" class="main-footer__link">Кредиты для ИП с залогом</a>
+              <a href="businessWithEstate.html" class="main-footer__link"
                 >Кредиты для ИП и юр лиц под залог коммерческой недвижимости</a
               >
             </div>
             <div class="main-footer__column">
               <h3 class="main-footer__subtitle">Кредиты для частных лиц</h3>
-              <a href="#" class="main-footer__link"
+              <a href="physFlat.html" class="main-footer__link"
                 >Банковское кредитование физических лиц под залог квартиры</a
               >
-              <a href="#" class="main-footer__link"
+              <a href="physEstate.html" class="main-footer__link"
                 >Банковское кредитование физических лиц под залог загородной
                 недвижимости</a
               >
-              <a href="#" class="main-footer__link"
+              <a href="physCarPlace.html" class="main-footer__link"
                 >Банковское кредитование физических лиц под залог машиноместа</a
               >
-              <a href="#" class="main-footer__link"
+              <a href="physRoom.html" class="main-footer__link"
                 >Банковское кредитование физических лиц под залог комнаты</a
               >
             </div>
@@ -1012,27 +1034,27 @@
               <h3 class="main-footer__subtitle">
                 Кредиты от частного инвестора
               </h3>
-              <a href="#" class="main-footer__link"
+              <a href="privateFlat.html" class="main-footer__link"
                 >Кредитование под залог квартиры от частного инвестора</a
               >
-              <a href="#" class="main-footer__link"
+              <a href="privateEstate.html" class="main-footer__link"
                 >Кредитования под залог загородной недвижимости от частного
                 инвестора</a
               >
-              <a href="#" class="main-footer__link"
+              <a href="privateCarPlace.html" class="main-footer__link"
                 >Кредитование под залог машиноместа от частного инвестора</a
               >
-              <a href="#" class="main-footer__link"
+              <a href="privateRoom.html" class="main-footer__link"
                 >Кредитование под залог комнаты от частного инвестора</a
               >
             </div>
             <div class="main-footer__column">
               <h3 class="main-footer__subtitle">Выкуп имущества</h3>
-              <a href="#" class="main-footer__link">Срочный выкуп квартиры</a>
-              <a href="#" class="main-footer__link"
+              <a href="buyoutFlat.html" class="main-footer__link">Срочный выкуп квартиры</a>
+              <a href="buyoutEstate.html" class="main-footer__link"
                 >Срочный выкуп загородной недвижимости</a
               >
-              <a href="#" class="main-footer__link"
+              <a href="buyoutCarPlace.html" class="main-footer__link"
                 >Срочный выкуп машиноместа</a
               >
             </div>
