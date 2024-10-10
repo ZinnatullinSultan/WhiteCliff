@@ -277,6 +277,10 @@
     margin-left: 0;
     justify-content: center;
   }
+  .thanks-test__inner{
+    flex-direction: column;
+    /* align-items: center; */
+  }
 }
 @media(max-width: 860px) {
   .hero__content {
@@ -526,7 +530,7 @@
     max-width: 300px;
     text-align: center;
   }
-  .question__options, .partner-member__title{
+  .partner-member__title{
     margin-bottom: 20px;
   }
   .partner-member__subtitle{
@@ -550,6 +554,9 @@
   .contacts__socials img{
     width: 34px;
     height: 34px;
+  }
+  .thanks-test__btns{
+    flex-wrap: wrap;
   }
 }
 @media(max-width: 562px){
@@ -585,7 +592,7 @@
     flex-direction: column;
     gap: 20px;
   }
-  .hero__title, .benefits__title, .calc-section__title, .services__title, .item-services__subtitle, .statistics__text, .steps__top-text, .articles__text, .articles__info, .articles__link, .help__btn, .conditions__list, .private-conditions__text, .hero-coop__subtitle, .hero-coop__form-text, .contacts__number, .contacts__email, .breadcrumb, .requisites__value {
+  .hero__title, .benefits__title, .calc-section__title, .services__title, .item-services__subtitle, .statistics__text, .steps__top-text, .articles__text, .articles__info, .articles__link, .help__btn, .conditions__list, .private-conditions__text, .hero-coop__subtitle, .hero-coop__form-text, .contacts__number, .contacts__email, .breadcrumb, .requisites__value, .thanks-test__top-text {
     font-size: 18px;
   }
   .calc-section__title, .hero-coop__subtitle{
@@ -652,7 +659,7 @@
     font-size: 22px;
     margin-bottom:25px;
   }
-  .item-services__amount, .credit-features__title, .statistics__title, .partners__title, .partners__subtitle, .steps__title, .consultation__title, .reviews__title, .articles__subtitle, .help__text, .conditions__subtitle, .private-conditions__title, .conditions__title, .test__title, .hero-coop__title, .requisites__title {
+  .item-services__amount, .credit-features__title, .statistics__title, .partners__title, .partners__subtitle, .steps__title, .consultation__title, .reviews__title, .articles__subtitle, .help__text, .conditions__subtitle, .private-conditions__title, .conditions__title, .test__title, .hero-coop__title, .requisites__title, .thanks-test__subtitle {
     font-size: 22px;
   }
   .item-services__amount--main{
@@ -766,7 +773,7 @@
   .item-services__list{
     margin-bottom: 25px;
   }
-  .credit-features__subtitle, .types__subtitle, .types__item-title{
+  .credit-features__subtitle, .types__subtitle, .types__item-title, .thanks-test__subtitle{
     font-size: 18px;
   }
   .credit-features__text{
@@ -790,7 +797,7 @@
     width: 50px;
     height: 50px;
   }
-  .deposit__text, .types__item-text{
+  .deposit__text, .types__item-text, .thanks-test__top-text{
     font-size: 16px;
   }
   .types__item{
@@ -801,6 +808,9 @@
   }
   .deposit__items--flex .deposit__item{
     min-width: fit-content;
+  }
+  .thanks-test__btn, .thanks-test__input{
+    width: 234px;
   }
 }
 @media(max-width: 355px) {

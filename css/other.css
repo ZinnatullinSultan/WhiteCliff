@@ -275,7 +275,6 @@
   max-width: 839px;
   margin: 0 auto;
   padding: 36px 18px 16px 30px;
-  min-height: 506px;
   position: relative;
 }
 .test__question {
@@ -300,7 +299,7 @@
   flex-wrap: wrap;
   gap: 25px 20px;
   max-width: 472px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 .question__checkbox {
   display: flex;
@@ -377,7 +376,7 @@
   bottom: 16px;
   right: 18px;
 }
-.test__btn {
+.test__btn, .thanks-test__btn {
   display: block;
   border-radius: 20px;
   background: #616161;
@@ -406,7 +405,7 @@
   margin-bottom: 214px;
 }
 .question__options--third {
-  margin-bottom: 119px;
+  margin-bottom: 115px;
 }
 .thanks {
   margin-bottom: 126px;
@@ -605,7 +604,7 @@ iframe {
   height: 100%;
   border: 0;
 }
-.requisites{
+.requisites {
   margin-bottom: 276px;
 }
 .requisites__title {
@@ -634,4 +633,73 @@ iframe {
   line-height: 140%;
   max-width: 250px;
   text-align: right;
+}
+.thanks-test__subtitle {
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 37px;
+  max-width: 451px;
+}
+.thanks-test__top-text {
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.thanks-test__text {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 44px;
+}
+.thanks-test__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 95px;
+}
+.thanks-test__label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.thanks-test__input {
+  border-radius: 50px;
+  background: #f3f3f3;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 22px 20px;
+  display: block;
+  width: 252px;
+}
+.thanks-test__item{
+  margin-bottom: 41px;
+}
+.thanks-test__item:first-child {
+  margin-bottom: 22px;
+}
+.thanks-test__btns{
+  display: flex;
+  gap: 15px;
+}
+.thanks-test__btn{
+  width: 242px;
+}
+.thanks-test__btn--special{
+  border-radius: 50px;
+  font-weight: 500;
+  text-align: center;
+  background: #3f3f3f;
+  padding: 23px;
+}
+.types__item{
+  width: 450px;
+}
+.types__items{
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.question__options--margin{
+  margin-bottom: 208px;
+}
+.thanks-test__subtitle--margin{
+  margin-bottom: 70px;
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WhiteCliff</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/other.css">
+    <link rel="stylesheet" href="css/other.css" />
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
@@ -42,18 +42,19 @@
         <nav class="nav">
           <ul class="menu">
             <li class="menu__item menu__item--list">
-              <p class="menu__link">Бизнесу <img src="img/arr-down.svg" alt="Стрелка вниз"
-              /></p>
+              <p class="menu__link">
+                Бизнесу <img src="img/arr-down.svg" alt="Стрелка вниз" />
+              </p>
             </li>
             <li class="menu__item menu__item--list">
-              <p class="menu__link"
-                >Физ лицам <img src="img/arr-down.svg" alt="Стрелка вниз"
-              /></p>
+              <p class="menu__link">
+                Физ лицам <img src="img/arr-down.svg" alt="Стрелка вниз" />
+              </p>
             </li>
             <li class="menu__item menu__item--list">
-              <p class="menu__link"
-                >Выкуп <img src="img/arr-down.svg" alt="Стрелка вниз"
-              /></p>
+              <p class="menu__link">
+                Выкуп <img src="img/arr-down.svg" alt="Стрелка вниз" />
+              </p>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Преимущества</a>
@@ -87,21 +88,18 @@
         <div class="container">
           <ol class="breadcrumb">
             <li><a href="/">Главная</a></li>
-            <li><a href="#">Бизнесу</a></li>
-            <li class="active">Кредит для физ лиц под залог комнаты </li>
+            <li><a href="#">Выкуп</a></li>
+            <li class="active">Срочный выкуп загородной недвижимости</li>
           </ol>
         </div>
       </nav>
-      <section class="hero">
+      <section class="hero hero--buyout">
         <div class="container">
           <div class="hero__title-box">
             <h1 class="hero__title">
-              Получите кредит для физ лиц под залог комнаты до 30 млн ₽  на срок до 20 лет онлайн. Ставка от 12%, 97% одобрения
+              Срочный выкуп машиноместа. <br />
+              Получите до 90% рыночной стоимости наличными за 72 часа
             </h1>
-            <p class="hero__subtitle hero__subtitle--phys">
-              Одобрено кредитов за сегодня
-              <span class="text--bold">10/12</span>
-            </p>
           </div>
           <div class="hero__content">
             <div class="hero__left">
@@ -109,27 +107,19 @@
                 <div class="hero__item">
                   <div class="hero__circle"></div>
                   <p class="hero__text">
-                    Подбор кредита среди
-                    <span class="text--semibold"
-                      >40 банков-партнеров и базы частных инвесторов</span
-                    >
+                    Выкуп машиноместа за 3 рабочих дня без рисков
                   </p>
-                </div>
-                <div class="hero__item">
-                  <div class="hero__circle"></div>
-                  <p class="hero__text text--semibold">Без массовых рассылок</p>
                 </div>
                 <div class="hero__item">
                   <div class="hero__circle"></div>
                   <p class="hero__text text--semibold">
-                    Подбор на ваших условиях
+                    Оценка стоимости онлайн или с выездом оценщика
                   </p>
                 </div>
                 <div class="hero__item">
                   <div class="hero__circle"></div>
-                  <p class="hero__text">
-                    <span class="text--semibold">Полное сопровождение -</span>
-                    от анализа до выдачи средств
+                  <p class="hero__text text--semibold">
+                    Аванс до 1 млн рублей в день обращения
                   </p>
                 </div>
               </div>
@@ -145,232 +135,250 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
-        <div class='container'>
-          <div class="advantages__inner">
-            <div class="advantages__item">
-              <div class="advantages__circle"></div>
-              <p class="advantages__text">Никого не нужно выписывать</p>
-            </div>
-            <div class="advantages__item">
-              <div class="advantages__circle"></div>
-              <p class="advantages__text">До 90% от рыночной стоимости недвижимости</p>
-            </div>
-            <div class="advantages__item">
-              <div class="advantages__circle"></div>
-              <p class="advantages__text">Снятие арестов и обременений с недвижимости</p>
-            </div>
-            <div class="advantages__item">
-              <div class="advantages__circle"></div>
-              <p class="advantages__text">Вы остаетесь собственником </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="calc-section" id="calc">
-        <div class="container">
-          <h2 class="calc-section__title">
-            Рассчитайте свой кредит и получите решение с 97% вероятностью
-            одобрения
-          </h2>
-          <div class="calc">
-            <div class="calc__fields">
-              <div class="calc__field">
-                <label class="calc__label" for="amount"
-                  >Укажите сумму кредита</label
-                >
-                <div>
-                  <div class="calc__input-wrapper">
-                    <input
-                      class="calc__input"
-                      name="amount"
-                      id="amount"
-                      type="number" />
-                  </div>
-                  <p class="calc__hint">До 200.000.000 ₽</p>
-                </div>
-              </div>
-              <div class="calc__field">
-                <label class="calc__label" for="period"
-                  >Укажите срок кредита</label
-                >
-                <div>
-                  <div class="calc__input-wrapper calc__input-wrapper--period">
-                    <input
-                      class="calc__input"
-                      name="period"
-                      id="period"
-                      type="number" />
-                  </div>
-                  <p class="calc__hint">От 1 года до 20 лет</p>
-                </div>
-              </div>
-              <div class="calc__field">
-                <label class="calc__label" for="percent"
-                  >Укажите процентную ставку</label
-                >
-                <div>
-                  <div class="calc__input-wrapper calc__input-wrapper--percent">
-                    <input
-                      class="calc__input"
-                      name="percent"
-                      id="percent"
-                      type="number" />
-                  </div>
-                  <p class="calc__hint">От 3% до 16%</p>
-                </div>
-              </div>
-            </div>
-            <div class="calc__results results">
-              <p class="results__title">Ежемесячный платеж</p>
-              <p class="results__amount results__amount--main">3.976 ₽</p>
-              <div class="results__box">
-                <div class="results__item">
-                  <p class="results__title">Переплата за весь срок</p>
-                  <p class="results__amount">245.356 ₽</p>
-                </div>
-                <div class="results__item">
-                  <p class="results__title">Эффективная процентная ставка</p>
-                  <p class="results__amount">3.0%</p>
-                </div>
-              </div>
-              <label class="calc__label" for="number"
-                >Оставьте заявку, чтобы получить кредит на ваших условиях</label
-              >
-              <input
-                type="number"
-                id="number"
-                name="number"
-                class="results__input"
-                placeholder="+7 (___) ___-__-__" />
-              <a href="#" class="results__btn">Получить кредит</a>
-            </div>
-          </div>
-          <p class="calc-section__text">
-            Окончательные условия по кредиту зависят от финансового положения
-            заемщика, возраста, семейного положения, финансовой дисциплины и
-            других обстоятельств. Окончательное решение по кредиту принимается
-            кредитной организацией на основании предоставленных оригиналов
-            документов в соответствии с кредитной политикой кредитной
-            организации. Ставка по кредиту от 4.4% до 36% годовых в рублях. Срок
-            кредитования от 1 года до 30 лет. При запрашиваемой сумме кредита 1
-            000 000 рублей на срок 60 месяцев при ставке 4.4% годовых примерный
-            ежемесячный платеж составит 18 825 рублей. Примерная общая сумма
-            ежемесячных платежей за 60 месяцев составит 18 825 рублей*60
-            месяцев=1 129 500 рублей, из них проценты за весь срок кредита 129
-            500 рублей. В случае неисполнения заемщиком обязательств по
-            кредитному договору кредитор оставляет за собой право осуществлять
-            взыскание задолженности в досудебном порядке в строгом соответствии
-            со статьей 15 ФЗ №353. На досудебном этапе: личные встречи,
-            телефонные переговоры, почтовые отправления по месту жительства
-            заемщика, телеграфные сообщения, текстовые, голосовые и иные
-            сообщения.
-          </p>
-          <p class="calc-section__text">
-            Все материалы, размещенные на сайте WhiteCliff.ru имеют
-            информационный характер и защищены законодательством об авторском
-            праве. <br />Данный сайт является информационным ресурсом и
-            оказывает помощь в получении кредита через банковские или финансовые
-            организации, осуществляющие банковскую деятельность на территории
-            Российской Федерации. <br />Заполняя любую форму на данном сайте, вы
-            соглашаетесь с правилами обработки персональных данных. ООО “Белый
-            утес” не является финансовой или микрофинансовой организацией, не
-            оказывает услуг по оформлению и предоставлению населению
-            микрозаймов, кредитов и других финансовых услуг, работает на
-            основании договоров о сотрудничестве с Банками партнерами, РНКО,
-            НДКО, КПК, кредитными союзами, инвестиционными фондами
-          </p>
-        </div>
-      </section>
-      <section class="conditions">
-        <div class='container'>
-          <h2 class="conditions__title">Условия и документы для получения кредита для физ лиц под залог комнаты</h2>
-          <div class="conditions__items">
-              <div class="conditions__item">
-                <div class="conditions__subtitle">Условия</div>
-                <ul class="conditions__list">
-                  <li class="conditions__list-item">Возраст от 21 до 65 лет;</li>
-                  <li class="conditions__list-item">Гражданство РФ;</li>
-                  <li class="conditions__list-item">Отсутствие судимостей</li>
-                  <li class="conditions__list-item">Исправная КИ</li>
-                  <li class="conditions__list-item">Отсутствие долгов ФССП и ФНС</li>
-                  <li class="conditions__list-item">Отсутствие в стоп листе</li>
-                </ul>
-              </div>
-              <div class="conditions__item">
-                <div class="conditions__subtitle">Документы</div>
-                <ul class="conditions__list">
-                  <li class="conditions__list-item">Паспорт</li>
-                  <li class="conditions__list-item">Снилс</li>
-                  <li class="conditions__list-item">Свидетельство на право собственности / Выписка из ЕГРН</li>
-                </ul>
-              </div>
-              <div class="conditions__item-btn">
-                <a href="#" class="conditions__btn">Получить кредит</a>
-              </div>
-            </div>
-        </div>
-      </section>
       <section class="benefits">
         <div class="container">
-          <h2 class="benefits__title">
-            <span class="text--semibold">Больше никаких отказов!</span> <br />
-            Выработали схему работы с банками –
-            <span class="text--semibold">одобряют 9/10 поданных заявок</span>
+          <h2 class="benefits__title text--semibold">
+            Почему стоит выбрать именно нас для срочного выкупа машиноместа
           </h2>
           <div class="benefits__items">
             <div class="benefits__item">
               <div class="benefits__item-top">
                 <div class="benefits__circle"></div>
                 <h3 class="benefits__subtitle">
-                  Точечный подбор банков или частного инвестора для
-                  максимального шанса одобрения
+                  Быстрые сроки и гарантированный выкуп
                 </h3>
               </div>
               <p class="benefits__text">
-                Мы не делаем массовых рассылок. Вместо этого
-                <span class="text--semibold"
-                  >тщательно изучаем ситуацию клиента и подбираем банк,</span
-                >
-                соответствующий его профилю на 100%.
+                Мы выкупаем машиноместо в Москве за рекордные 1-5 дней. После предварительной оценки гарантируем 100% выкуп вашей недвижимости в обозначенные сроки.
+              </p>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__item-top">
+                <div class="benefits__circle"></div>
+                <h3 class="benefits__subtitle">Максимально выгодные условия</h3>
+              </div>
+              <p class="benefits__text">
+                Получите до 90% рыночной стоимости вашего машиноместа. Мы учитываем все факторы: локацию, площадь, состояние и другие при независимой оценке. Никаких скрытых комиссий и наценок.
+              </p>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__item-top">
+                <div class="benefits__circle"></div>
+                <h3 class="benefits__subtitle">Безопасность сделки на 100%</h3>
+              </div>
+              <p class="benefits__text">
+                Работаем строго по закону и обеспечиваем полную юридическую
+                чистоту. Сделка проходит с нотариальным заверением и под
+                контролем опытных юристов. Ваши права защищены.
               </p>
             </div>
             <div class="benefits__item">
               <div class="benefits__item-top">
                 <div class="benefits__circle"></div>
                 <h3 class="benefits__subtitle">
-                  Оплата только после выдачи кредита
+                  Профессионализм и оперативность
                 </h3>
-              </div>
-              <p class="benefits__text">
-                Никаких предоплат и скрытых комиссий. Вы платите лишь после
-                того, как деньги уже у вас на счету
-              </p>
-            </div>
-            <div class="benefits__item">
-              <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
-                <h3 class="benefits__subtitle">
-                  Полное сопровождение на всех этапах
-                </h3>
-              </div>
-              <p class="benefits__text">
-                Наши менеджеры помогают собрать документы, правильно подать
-                заявку, при необходимости взаимодействуют с банком –
-                <span class="text--semibold"
-                  >вам остается только подписать договор</span
-                >
-              </p>
-            </div>
-            <div class="benefits__item">
-              <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
-                <h3 class="benefits__subtitle">Более 3241 успешных кредитов</h3>
               </div>
               <div class="benefits__text">
-                За 4 года работы мы помогли сотням компаний получить
-                финансирование на сумму
-                <span class="text--semibold">свыше 5 млрд рублей</span>
+                В нашей компании работают только эксперты рынка недвижимости. Мы
+                оперативно решаем любые ситуации: ипотека, долги, проблемы с
+                документами, доли собственников и другие.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="test">
+        <div class="container">
+          <h2 class="test__title">
+            Пройдите тест и узнайте примерную сумму выкупа загородной недвижимости до 90% от рыночной стоимости
+          </h2>
+          <div class="test__content" hidden>
+            <div class="test__top">
+              <div class="test__top-icon">
+                <img src="img/test-icon.svg" alt="" />
+              </div>
+              <p class="test__top-text">
+                Узнайте примерную стоимость недвижимости при срочном выкупе
+              </p>
+            </div>
+            <p class="question__title">Машиноместо находится на крытой или открытой автостоянке?</p>
+            <div class="question__options question__options--margin">
+              <div class="question__checkbox">
+                <input type="radio" id="option1" name="group1" checked />
+                <label for="option1">На крытой</label>
+              </div>
+              <div class="question__checkbox">
+                <input type="radio" id="option2" name="group1" />
+                <label for="option2">На открытой</label>
+              </div>
+            </div>
+            <div class="test__bottom">
+              <div class="test__progress">
+                <p class="test__progress-text">Готово: <span style="font-size: 11px;">хх%</span></p>
+                <div class="test__progressbar"></div>
+              </div>
+              <div class="test__control">
+                <div class="test__prev"><button><img src="img/test-left-arr.svg" alt=""></button></div>
+                <div class="test__next">
+                  <button class="test__next-btn">Далее <img src="img/test-right-arr.svg" alt=""></button>
+                  <p class="test__hint">или нажмите Enter</p>
+                </div>
+              </div>
+            </div>
+            <div class="test__btns">
+              <a class="test__btn">Консультация юриста</a>
+              <a class="test__btn">Примерная сумма выкупа</a>
+            </div>
+          </div>
+          <div class="test__content" hidden>
+            <div class="test__top">
+              <div class="test__top-icon">
+                <img src="img/test-icon.svg" alt="" />
+              </div>
+              <p class="test__top-text">
+                Узнайте примерную стоимость недвижимости при срочном выкупе
+              </p>
+            </div>
+            <p class="question__title">Какая площадь машиноместа?</p>
+            <div class="question__options question__options--input">
+              <div class="question__input-item">
+                <input type="text" class="question__input" value="Напишите точную площадь">
+              </div>
+            </div>
+            <div class="test__bottom">
+              <div class="test__progress">
+                <p class="test__progress-text">Готово: <span style="font-size: 11px;">хх%</span></p>
+                <div class="test__progressbar"></div>
+              </div>
+              <div class="test__control">
+                <div class="test__prev"><button><img src="img/test-left-arr.svg" alt=""></button></div>
+                <div class="test__next">
+                  <button class="test__next-btn">Далее <img src="img/test-right-arr.svg" alt=""></button>
+                  <p class="test__hint">или нажмите Enter</p>
+                </div>
+              </div>
+            </div>
+            <div class="test__btns">
+              <a class="test__btn">Консультация юриста</a>
+              <a class="test__btn">Примерная сумма выкупа</a>
+            </div>
+          </div>
+          <div class="test__content" hidden>
+            <div class="test__top">
+              <div class="test__top-icon">
+                <img src="img/test-icon.svg" alt="" />
+              </div>
+              <p class="test__top-text">
+                Узнайте примерную стоимость недвижимости при срочном выкупе
+              </p>
+            </div>
+            <p class="question__title">По какой причине вам необходим срочный выкуп машиноместа?</p>
+            <div class="question__options">
+              <div class="question__checkbox">
+                <input type="radio" id="option11" name="group1" checked />
+                <label for="option11">Получение наличных денег максимально быстро</label>
+              </div>
+              <div class="question__checkbox">
+                <input type="radio" id="option22" name="group1" />
+                <label for="option22">Переезд/Смена места жительства</label>
+              </div>
+              <div class="question__checkbox">
+                <input type="radio" id="option33" name="group1" />
+                <label for="option33">Раздел имущества (развод, наследство и т.д.)</label>
+              </div>
+              <div class="question__checkbox">
+                <input type="radio" id="option44" name="group1" />
+                <label for="option44">Закрыть задолженности</label>
+              </div>
+              <div class="question__checkbox">
+                <input type="radio" id="option55" name="group1" />
+                <label for="option55">Другая причина</label>
+              </div>
+            </div>
+            <div class="test__bottom">
+              <div class="test__progress">
+                <p class="test__progress-text">Готово: <span style="font-size: 11px;">хх%</span></p>
+                <div class="test__progressbar"></div>
+              </div>
+              <div class="test__control">
+                <div class="test__prev"><button><img src="img/test-left-arr.svg" alt=""></button></div>
+                <div class="test__next">
+                  <button class="test__next-btn">Далее <img src="img/test-right-arr.svg" alt=""></button>
+                  <p class="test__hint">или нажмите Enter</p>
+                </div>
+              </div>
+            </div>
+            <div class="test__btns">
+              <a class="test__btn">Консультация юриста</a>
+              <a class="test__btn">Примерная сумма выкупа</a>
+            </div>
+          </div>
+          <div class="test__content" hidden>
+            <div class="test__top">
+              <div class="test__top-icon">
+                <img src="img/test-icon.svg" alt="" />
+              </div>
+              <p class="test__top-text">
+                Узнайте примерную стоимость недвижимости при срочном выкупе
+              </p>
+            </div>
+            <p class="question__title">Когда вам необходимо получить деньги за машиноместа?</p>
+            <div class="question__options question__options--third">
+              <div class="question__checkbox">
+                <input type="radio" name="group1" checked />
+                <label for="option111 ">В ближайшие 24-48 часов</label>
+              </div>
+              <div class="question__checkbox">
+                <input type="radio" name="group1" />
+                <label for="option222">В течение 3-5 дней</label>
+              </div>
+              <div class="question__checkbox">
+                <input type="radio" name="group1" />
+                <label for="option333">В течение 7-10 дней</label>
+              </div>
+            </div>
+            <div class="test__bottom">
+              <div class="test__progress">
+                <p class="test__progress-text">Готово: <span style="font-size: 11px;">хх%</span></p>
+                <div class="test__progressbar"></div>
+              </div>
+              <div class="test__control">
+                <div class="test__prev"><button><img src="img/test-left-arr.svg" alt=""></button></div>
+                <div class="test__next">
+                  <button class="test__next-btn">Далее <img src="img/test-right-arr.svg" alt=""></button>
+                  <p class="test__hint">или нажмите Enter</p>
+                </div>
+              </div>
+            </div>
+            <div class="test__btns">
+              <a class="test__btn">Консультация юриста</a>
+              <a class="test__btn">Примерная сумма выкупа</a>
+            </div>
+          </div>
+          <div class="test__content thanks-test">
+            <p class="thanks-test__top-text">
+              Спасибо, остался последний вопрос!
+            </p>
+            <div class="thanks-test__inner">
+              <div class="thanks-test__left">
+                <p class="thanks-test__subtitle">Оставьте контактные данные, и мы вышлем вам примерную стоимость выкупа вашего машиноместа</p>
+                <p class="thanks-test__text">Расскажем все детали выкупа и ответим на вопросы</p>
+                <div class="thanks-test__btns">
+                  <a href="#" class="thanks-test__btn">Консультация юриста</a>
+                  <a href="#" class="thanks-test__btn">Примерная сумма выкупа</a>
+                </div>
+              </div>
+              <div class="thanks-test__right">
+                <div class="thanks-test__item">
+                  <label for="th-in" class="thanks-test__label">Введите имя</label>
+                  <input type="text" name="th-in" class="thanks-test__input" placeholder="Например, Иван">
+                </div>
+                <div class="thanks-test__item">
+                  <label for="th-in" class="thanks-test__label">Введите номер</label>
+                  <input type="text" name="th-in" class="thanks-test__input" placeholder="+7 (___) ___-__-__">
+                </div>
+                <a href="#" class="thanks-test__btn thanks-test__btn--special">Узнать сумму выкупа</a>
               </div>
             </div>
           </div>
@@ -518,24 +526,17 @@
           </div>
         </div>
       </section>
-      <section class="steps">
+      <section class="steps steps--buyout">
         <div class="container">
           <div class="steps__top">
             <h2 class="steps__title">
-              Вы потратите <span class="text--bold">всего час</span> своего
-              времени и получите деньги на свой счет
-              <span class="text--bold">в течение 3-7 дней</span>
+              Безопасный процесс выкупа без обмана и подводных камней
             </h2>
-            <div class="steps__hint">
-              <div class="steps__top-circle"></div>
-              <p class="steps__top-text">
-                Ваши интересы перед банками будет представлять
-                <span class="text--bold">личный менеджер</span>
-              </p>
-            </div>
           </div>
           <div class="steps__content">
-            <div class="steps__img-wrapper"><img class="steps__img" src="img/steps-top.svg" alt="" /></div>
+            <div class="steps__img-wrapper">
+              <img class="steps__img" src="img/steps-top-3.svg" alt="" />
+            </div>
             <div class="steps__items">
               <div class="steps__item">
                 <div class="steps__circle"></div>
@@ -555,82 +556,36 @@
               <div class="steps__item">
                 <div class="steps__circle"></div>
                 <p class="steps__text">
-                  Согласовываем индивидуальные условия кредитования
+                  Если требуется уточнение деталей, оценщик выезжает на объект
+                  для осмотра и составления полного отчета об оценке
                 </p>
               </div>
-              <div class="steps__item">
-                <div class="steps__circle"></div>
-                <p class="steps__text">Заключаем договор на оказание услуг</p>
-              </div>
             </div>
-            <div class="steps__img-wrapper"><img class="steps__img" src="img/steps-bottom.svg" alt="" /></div>
+            <div class="steps__img-wrapper">
+              <img class="steps__img" src="img/steps-bottom-3.svg" alt="" />
+            </div>
             <div class="steps__items steps__items--bottom">
               <div class="steps__item">
                 <div class="steps__circle"></div>
                 <p class="steps__text">
-                  Только после предварительного одобрения вы отправляете нужные
-                  документы
+                  Мы делаем вам финальное предложение с указанием суммы выкупа
+                  от 90% рыночной стоимости
                 </p>
               </div>
               <div class="steps__item">
                 <div class="steps__circle"></div>
                 <p class="steps__text">
-                  Отправляем заявку в банк и ждем подтверждения
+                  В случае вашего согласия оформляем необходимые документы для
+                  нотариуса
                 </p>
               </div>
               <div class="steps__item">
                 <div class="steps__circle"></div>
                 <p class="steps__text">
-                  Вы получаете деньги и оплачиваете наши услуги
+                  Передаете права собственности у нотариуса и сразу после этого
+                  мы производим полную оплату наличными или на ваш счет
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="consultation">
-        <div class="container">
-          <div class="consultation__inner">
-            <div class="consultation__left">
-              <h2 class="consultation__title">
-                <span class="text--bold"
-                  >Получите бесплатную оценку вашей ситуации</span
-                >
-                и узнайте вероятность получения
-                <span class="text--bold">кредита</span>
-                <span class="text--gray">в текущих условиях</span>
-              </h2>
-              <p class="consultation__text">
-                В течение 15 минут
-                <span class="text--gray"
-                  >с вами созвонится наш кредитный эксперт для подробной
-                  консультации</span
-                >
-              </p>
-              <label class="consultation__label" for="status">Вы:</label>
-              <div class="consultation__select-wrapper">
-                <select class="consultation__select" name="status" id="status">
-                  <option value="privatePerson">Частное лицо</option>
-                </select>
-                <img class="consultation__arr" src="img/arr-down.svg" alt="" />
-              </div>
-              <label
-                class="consultation__label consultation__label--phone"
-                for="phone"
-                >Введите номер телефона</label
-              >
-              <div>
-                <input
-                  type="number"
-                  id="phone"
-                  name="phone"
-                  class="consultation__input"
-                  placeholder="+7 (___) ___-__-__" />
-                <a href="#" class="consultation__btn">Получить кредит</a>
-              </div>
-            </div>
-            <div class="consultation__right">
-              <img src="img/expert.svg" alt="" />
             </div>
           </div>
         </div>
@@ -722,56 +677,66 @@
             <div class="faq__item">
               <div class="faq__top">
                 <div class="faq__subtitle">
-                  Где находятся частные инвесторы? Они из России?
+                  Выкупаете ли вы недвижимость с обременениями (ипотека, залог,
+                  аресты и т.д.)?
                 </div>
                 <button class="faq__btn">
                   <img class="faq__arrow" src="img/arr-up.svg" alt="" />
                 </button>
               </div>
               <div class="faq__text">
-                Да, мы сотрудничаем только с российскими частными инвесторами и кредитными организациями, действующими на территории РФ в рамках правового поля.
+                Да, мы выкупаем квартиры, находящиеся в залоге, ипотеке, с
+                долгами по ЖКХ и другими обременениями. При этом мы
+                самостоятельно занимаемся снятием всех ограничений за счет
+                собственных средств.
               </div>
             </div>
             <div class="faq__item">
               <div class="faq__top">
                 <div class="faq__subtitle">
-                  В какой ситуации я могу получить кредит от частного инвестора?
+                  Каков размер дисконта при срочном выкупе недвижимости?
                 </div>
                 <button class="faq__btn">
                   <img class="faq__arrow" src="img/arr-up.svg" alt="" />
                 </button>
               </div>
               <div class="faq__text">
-                Кредит от частного инвестора под залог может быть хорошим вариантом, если вы не проходите по стандартным требованиям банков из-за испорченной кредитной истории, нетипичного вида залога или необходимости получить крупную сумму в сжатые сроки. Частные инвесторы более гибки и оперативны в принятии решений.
+                Цена срочного выкупа, как правило, составляет 80-90% от рыночной
+                стоимости недвижимости. Точный размер дисконта определяется
+                индивидуально, в зависимости от состояния недвижимости, ее
+                расположения и других факторов.
               </div>
             </div>
             <div class="faq__item">
               <div class="faq__top">
                 <div class="faq__subtitle">
-                  Можно ли доверять частным инвесторам? Как обезопасить себя от мошенничества?
+                  Можно ли получить аванс при срочном выкупе недвижимости?
                 </div>
                 <button class="faq__btn">
                   <img class="faq__arrow" src="img/arr-up.svg" alt="" />
                 </button>
               </div>
               <div class="faq__text">
-                Работая только с проверенными и добросовестными частными инвесторами через профессионального кредитного брокера, вы обезопасите себя от возможного мошенничества. Мы тщательно проверяем инвесторов, сделки проходят в строгом соответствии с законодательством под юридическим сопровождением.
+                Да, в "Белом утесе" предусмотрена возможность получения аванса
+                до 1 млн рублей в день обращения к нам. Это позволяет решить
+                неотложные финансовые вопросы клиента на начальном этапе сделки
               </div>
             </div>
             <div class="faq__item">
               <div class="faq__top">
                 <div class="faq__subtitle">
-                  В какой момент нужно оплатить ваши услуги?
+                  Гарантируете ли вы безопасность и законность сделки по
+                  срочному выкупу недвижимости?
                 </div>
                 <button class="faq__btn">
                   <img class="faq__arrow" src="img/arr-up.svg" alt="" />
                 </button>
               </div>
               <div class="faq__text">
-                Мы не берем никаких предоплат. Вы оплачиваете комиссию только по
-                факту получения кредитных средств на ваш счет. Таким образом, мы
-                разделяем с вами риски и финансово заинтересованы в
-                положительном результате.
+                Абсолютно. Мы работаем строго в рамках закона и предоставляем
+                полное юридическое сопровождение на всех этапах сделки. Все
+                договоры заверяются у нотариуса, что исключает риски для обеих
+                сторон. Безопасность сделки для нас в приоритете.
               </div>
             </div>
             <div class="faq__item">
@@ -801,31 +766,29 @@
             <div class="other__track">
               <div class="other__slide">
                 <div class="services__item item-services">
-                  <h3 class="item-services__title">
-                    Банковское кредитование физических лиц под залог квартиры
-                  </h3>
-                  <p class="item-services__subtitle">Сумма кредита</p>
-                  <p class="item-services__amount item-services__amount--main">
-                    До 100 млн ₽
-                  </p>
-                  <div class="item-services__info">
+                  <h3 class="item-services__title">Срочный выкуп квартиры</h3>
+                  <div class="item-services__info item-services__info--center">
                     <div>
-                      <p class="item-services__subtitle">Процентная ставка</p>
-                      <p class="item-services__amount">от 12% годовых</p>
+                      <p class="item-services__subtitle">Процент выкупа</p>
+                      <p class="item-services__amount">
+                        до 90% рыночной стоимости
+                      </p>
                     </div>
                     <div>
-                      <p class="item-services__subtitle">Срок</p>
-                      <p class="item-services__amount">До 20 лет</p>
+                      <p class="item-services__subtitle">Сроки выкупа</p>
+                      <p class="item-services__amount">до 3х дней</p>
                     </div>
                   </div>
                   <div class="item-services__list item-services__list--center">
                     <div>
                       <div class="item-services__circle"></div>
-                      <p class="item-services__text">Любая цель</p>
+                      <p class="item-services__text">Аванс в день обращения</p>
                     </div>
                     <div>
                       <div class="item-services__circle"></div>
-                      <p class="item-services__text">По 2м документам</p>
+                      <p class="item-services__text">
+                        Недвижимость в любом состоянии
+                      </p>
                     </div>
                   </div>
                   <a href="#" class="item-services__btn">Подробнее</a>
@@ -833,31 +796,29 @@
               </div>
               <div class="other__slide">
                 <div class="services__item item-services">
-                  <h3 class="item-services__title">
-                    Банковское кредитование физических лиц под залог комнаты
-                  </h3>
-                  <p class="item-services__subtitle">Сумма кредита</p>
-                  <p class="item-services__amount item-services__amount--main">
-                    До 30 млн ₽
-                  </p>
-                  <div class="item-services__info">
+                  <h3 class="item-services__title">Срочный выкуп комнаты</h3>
+                  <div class="item-services__info item-services__info--center">
                     <div>
-                      <p class="item-services__subtitle">Процентная ставка</p>
-                      <p class="item-services__amount">от 12% годовых</p>
+                      <p class="item-services__subtitle">Процент выкупа</p>
+                      <p class="item-services__amount">
+                        до 90% рыночной стоимости
+                      </p>
                     </div>
                     <div>
-                      <p class="item-services__subtitle">Срок</p>
-                      <p class="item-services__amount">До 20 лет</p>
+                      <p class="item-services__subtitle">Сроки выкупа</p>
+                      <p class="item-services__amount">до 3х дней</p>
                     </div>
                   </div>
                   <div class="item-services__list item-services__list--center">
                     <div>
                       <div class="item-services__circle"></div>
-                      <p class="item-services__text">Любая цель</p>
+                      <p class="item-services__text">Аванс в день обращения</p>
                     </div>
                     <div>
                       <div class="item-services__circle"></div>
-                      <p class="item-services__text">По 2м документам</p>
+                      <p class="item-services__text">
+                        Недвижимость в любом состоянии
+                      </p>
                     </div>
                   </div>
                   <a href="#" class="item-services__btn">Подробнее</a>
@@ -1017,5 +978,56 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script>
+      // Инициализация переменной для текущего вопроса
+  let currentQuestion = 0;
+
+// Получаем все элементы с классом .test__content
+const questions = document.querySelectorAll('.test__content');
+
+// Функция для обновления отображаемого вопроса и кнопок
+function updateQuestion() {
+  // Скрываем все вопросы
+  questions.forEach((question, index) => {
+    question.hidden = index !== currentQuestion;
+  });
+
+  // Обновляем прогресс
+  const progress = Math.round(((currentQuestion + 1) / questions.length) * 100);
+  document.querySelector('.test__progress-text span').textContent = progress + '%';
+
+  // Управляем видимостью кнопок для текущего вопроса
+  const currentContent = questions[currentQuestion];
+  const prevButton = currentContent.querySelector('.test__prev button');
+  const nextButton = currentContent.querySelector('.test__next-btn');
+}
+
+// Обработчик события для кнопки "Prev"
+questions.forEach((question, index) => {
+  const prevButton = question.querySelector('.test__prev button');
+  if (prevButton) {
+    prevButton.addEventListener('click', () => {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        updateQuestion();
+      }
+    });
+  }
+
+  // Обработчик события для кнопки "Next"
+  const nextButton = question.querySelector('.test__next-btn');
+  if (nextButton) {
+    nextButton.addEventListener('click', () => {
+      if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        updateQuestion();
+      }
+    });
+  };
+});
+
+// Обновляем вопрос в начале
+updateQuestion();
+    </script>
   </body>
 </html>

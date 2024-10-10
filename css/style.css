@@ -265,6 +265,9 @@ input {
 .hero {
   margin-bottom: 167px;
 }
+.hero__map{
+  text-align: -webkit-right;
+}
 .hero__title-box {
   max-width: 799px;
   position: relative;
@@ -351,6 +354,7 @@ input {
 }
 .hero__right img:last-child {
   display: block;
+  text-align: -webkit-right;
 }
 .benefits {
   margin-bottom: 200px;
