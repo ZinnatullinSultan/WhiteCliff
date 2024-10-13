@@ -371,7 +371,10 @@ nav li a:hover{
 .hero__circle {
   width: 53px;
   height: 53px;
-  background: #c4c4c4;
+}
+.hero__circle img{
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 .hero__btn-box {
@@ -428,7 +431,12 @@ nav li a:hover{
 .benefits__circle {
   min-width: 92px;
   min-height: 92px;
-  background-color: #5d5d5d;
+  max-width: 92px;
+  max-height: 92px;
+}
+.benefits__circle img{
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 .benefits__subtitle {
@@ -673,7 +681,12 @@ select {
 .item-services__circle {
   min-width: 29px;
   min-height: 29px;
-  background-color: #595959;
+  max-width: 29px;
+  max-height: 29px;
+}
+.item-services__circle img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 .item-services__text {
@@ -720,8 +733,13 @@ select {
 .credit-features__circle {
   min-width: 48px;
   min-height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+}
+.credit-features__circle img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  background-color: #c4c4c4;
 }
 .credit-features__subtitle {
   font-weight: 700;
@@ -756,10 +774,13 @@ select {
 }
 .statistics__img {
   border-radius: 20px;
-  background-color: #565656;
   width: 100%;
   height: 570px;
   max-width: 724px;
+}
+.statistics__img img {
+  width: 100%;
+  height: 100%;
 }
 .statistics__right {
   padding: 47px 9px 42px 39px;
@@ -773,9 +794,12 @@ select {
 .statistics__circle {
   width: 66px;
   height: 66px;
-  border-radius: 50%;
-  background-color: #c4c4c4;
   margin-bottom: 7px;
+}
+.statistics__circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 .statistics__amount {
   font-weight: 700;
@@ -860,8 +884,13 @@ select {
 .steps__top-circle {
   min-width: 75px;
   min-height: 75px;
+  max-width: 75px;
+  max-height: 75px;
+}
+.steps__top-circle img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  background-color: #c4c4c4;
 }
 .steps__img {
   margin-left: 120px;
@@ -903,11 +932,16 @@ select {
   transform: translateY(-57px);
 }
 .steps__circle {
-  width: 105px;
-  height: 105px;
-  border-radius: 50%;
-  background-color: #c4c4c4;
+  min-width: 105px;
+  min-height: 105px;
+  max-width: 105px;
+  max-height: 105px;
   margin: 0 auto 20px;
+}
+.steps__circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 .steps__text {
   font-weight: 700;
@@ -1095,23 +1129,37 @@ select {
   background: #f4f4f4;
   padding: 42px 30px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .faq__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  margin-bottom: 30px;
 }
 .faq__subtitle {
   font-weight: 700;
   font-size: 28px;
   line-height: 120%;
   max-width: 1219px;
-  margin-bottom: 30px;
 }
 .faq__text {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
   line-height: 120%;
   max-width: 1219px;
+}
+.faq__text--active {
+  display: block;
+}
+.faq__btn--active .faq__arrow {
+  transform: rotate(0deg);
+}
+.faq__arrow {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
 }
 .help {
   margin-bottom: 227px;

@@ -1,14 +1,70 @@
-//вкладки на главной странице
-const tabsBtn = document.querySelectorAll('.services__tab-btn');
-const tabsItems = document.querySelectorAll('.services__tab');
-const tabs = document.querySelectorAll('.services__items');
+// Инициализация переменной для текущего вопроса
+let currentQuestion = 0;
 
-tabsBtn.forEach((btn, i) => {
-  btn.addEventListener('click', () => {
-    tabsItems.forEach(btn => btn.classList.remove('services__tab--active'));
-    tabsItems[i].classList.add('services__tab--active');
-    tabs.forEach(tab => tab.classList.remove('services__items--active'));
-    tabs[i].classList.add('services__items--active');
+// Получаем все элементы с классом .test__content
+const questions = document.querySelectorAll('.test__content');
+
+// Функция для обновления отображаемого вопроса и кнопок
+function updateQuestion() {
+  // Скрываем все вопросы
+  questions.forEach((question, index) => {
+    question.hidden = index !== currentQuestion;
+  });
+
+  // Обновляем прогресс
+  const progress = Math.round(((currentQuestion + 1) / questions.length) * 100);
+  document.querySelector('.test__progress-text span').textContent =
+    progress + '%';
+
+  // Управляем видимостью кнопок для текущего вопроса
+  const currentContent = questions[currentQuestion];
+  const prevButton = currentContent.querySelector('.test__prev button');
+  const nextButton = currentContent.querySelector('.test__next-btn');
+}
+
+// Обработчик события для кнопки "Prev"
+questions.forEach((question, index) => {
+  const prevButton = question.querySelector('.test__prev button');
+  if (prevButton) {
+    prevButton.addEventListener('click', () => {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        updateQuestion();
+      }
+    });
+  }
+
+  // Обработчик события для кнопки "Next"
+  const nextButton = question.querySelector('.test__next-btn');
+  if (nextButton) {
+    nextButton.addEventListener('click', () => {
+      if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        updateQuestion();
+      }
+    });
+  }
+});
+
+// Обновляем вопрос в начале
+updateQuestion();
+//аккордеон
+document.querySelectorAll('.faq__item').forEach(item => {
+  item.addEventListener('click', function() {
+    const text = item.querySelector('.faq__text');
+    const btn = item.querySelector('.faq__btn');
+
+    // Закрываем все остальные активные элементы
+    document.querySelectorAll('.faq__text').forEach(otherText => {
+      if (otherText !== text) {
+        otherText.classList.remove('faq__text--active');
+        otherText.previousElementSibling.querySelector('.faq__btn').classList.remove('faq__btn--active');
+      }
+    });
+
+    // Переключаем текущее состояние
+    text.classList.toggle('faq__text--active');
+    btn.classList.toggle('faq__btn--active');
   });
 });
 //слайдер
@@ -43,19 +99,12 @@ prevBtn.addEventListener('click', function() {
   }
   updateSliderPosition();
 });
-//Стрелка селекта
-const selectElement = document.querySelector('.consultation__select');
-const arr = document.querySelector('.consultation__arr');
-selectElement.addEventListener('click', function() {
-  arr.classList.toggle('consultation__arr--open');
-});
 //аккордеон
 document.querySelectorAll('.faq__item').forEach(item => {
   item.addEventListener('click', function() {
     const text = item.querySelector('.faq__text');
     const btn = item.querySelector('.faq__btn');
 
-    // Закрываем все остальные активные элементы
     document.querySelectorAll('.faq__text').forEach(otherText => {
       if (otherText !== text) {
         otherText.classList.remove('faq__text--active');
@@ -63,14 +112,9 @@ document.querySelectorAll('.faq__item').forEach(item => {
       }
     });
 
-    // Переключаем текущее состояние
-    text.classList.toggle('faq__text--active');
-    btn.classList.toggle('faq__btn--active');
+    // text.classList.toggle('faq__text--active');
+    // btn.classList.toggle('faq__btn--active');
   });
-});
-// Закрытие стрелки при потере фокуса
-selectElement.addEventListener('blur', function() {
-  arr.classList.remove('consultation__arr--open');
 });
 //слайдер 2
 const slider2 = document.querySelector('.reviews__track');
@@ -135,4 +179,4 @@ prevBtn3.addEventListener('click', function() {
   }
   updateSliderPosition3();
 });
-console.log(currentSlide3, slides3[0].clientWidth, slider3.style.transform);
+

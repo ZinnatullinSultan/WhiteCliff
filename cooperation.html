@@ -20,20 +20,20 @@
             </div>
           </div>
           <a href="#calc" class="header__calc-btn">Калькулятор кредитования</a>
-          <a href="#" class="header__consultation-btn">Получить консультацию</a>
+          <a href="#consultation" class="header__consultation-btn">Получить консультацию</a>
           <div class="header__right">
             <div class="header__contacts">
-              <p class="header__number">+7 (989) 209-74-50</p>
+              <a href="tel:+79892097450" class="header__number">+7 (989) 209-74-50</a>
               <p class="header__timetable">
                 <span class="header__timetable--black">Пн-Пт:</span> с 9:00 до
                 19:00
               </p>
             </div>
             <div class="header__socials">
-              <a href="#" class="header__social"
+              <a href="https://t.me/+79892097450" class="header__social"
                 ><img src="img/tg.svg" alt=""
               /></a>
-              <a href="#" class="header__social"
+              <a href="https://wa.me/79892097450" class="header__social"
                 ><img src="img/whatsapp.svg" alt=""
               /></a>
             </div>
@@ -42,8 +42,8 @@
         <nav class="nav">
           <ul class="menu">
             <li class="menu__item menu__item--list">
-              <p class="menu__link">Бизнесу <img src="img/arr-down.svg" alt="Стрелка вниз"
-              /></p>
+              <a href="#" class="menu__link">Бизнесу <img src="img/arr-down.svg" alt="Стрелка вниз"
+              /></a>
               <ul class="submenu">
                 <li><a href="businessWithout.html">Кредитование юридических лиц без залога</a></li>
                 <li><a href="businessWith.html">Кредитование юридических лиц c залогом</a></li>
@@ -57,9 +57,9 @@
               </ul>
             </li>
             <li class="menu__item menu__item--list">
-              <p class="menu__link"
+              <a href="#" class="menu__link"
                 >Физ лицам <img src="img/arr-down.svg" alt="Стрелка вниз"
-              /></p>
+              /></a>
               <ul class="submenu submenu--phys">
                 <li><a href="privateFlat.html">Кредит для физ лиц под залог квартиры от частного инвестора</a></li>
                 <li><a href="privateRoom.html">Кредит для физ лиц под залог комнаты от частного инвестора</a></li>
@@ -68,9 +68,9 @@
               </ul>
             </li>
             <li class="menu__item menu__item--list">
-              <p class="menu__link"
+              <a href="#" class="menu__link"
                 >Выкуп <img src="img/arr-down.svg" alt="Стрелка вниз"
-              /></p>
+              /></a>
               <ul class="submenu submenu--buyout">
                 <li><a href="buyoutFlat.html">Срочный выкуп квартиры</a></li>
                 <li><a href="buyoutRoom.html">Срочный выкуп комнаты</a></li>
@@ -123,13 +123,16 @@
           <p class="hero-coop__subtitle">Гибкие условия и полная поддержка на всех этапах</p>
           <div class="hero-coop__form">
             <p class="hero-coop__form-text">Оставьте заявку, чтобы обсудить условия сотрудничества</p>
-            <input
-                type="number"
-                id="number"
-                name="number"
-                class="hero-coop__input"
-                placeholder="+7 (___) ___-__-__" />
-            <a href="#" class="hero-coop__btn">Стать партнером</a>
+            <form action="" method="post" class="hero-coop__form">
+              <input
+                  type="number"
+                  id="number"
+                  name="number"
+                  class="hero-coop__input"
+                  required
+                  placeholder="+7 (___) ___-__-__" />
+              <button type="submit" class="hero-coop__btn">Стать партнером</button>
+            </form>
           </div>
         </div>
       </section>
@@ -141,7 +144,7 @@
           <div class="benefits__items">
             <div class="benefits__item">
               <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
+                <div class="benefits__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                 <h3 class="benefits__subtitle">
                   Высокие проценты до 5% с каждой сделки
                 </h3>
@@ -152,7 +155,7 @@
             </div>
             <div class="benefits__item">
               <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
+                <div class="benefits__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                 <h3 class="benefits__subtitle">
                   Никаких ограничений и входных взносов
                 </h3>
@@ -163,7 +166,7 @@
             </div>
             <div class="benefits__item">
               <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
+                <div class="benefits__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                 <h3 class="benefits__subtitle">
                   Зарекомендовали себя среди банков и клиентов
                 </h3>
@@ -174,7 +177,7 @@
             </div>
             <div class="benefits__item">
               <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
+                <div class="benefits__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                 <h3 class="benefits__subtitle">Широкий спектр кредитных продуктов</h3>
               </div>
               <p class="benefits__text">
@@ -190,7 +193,7 @@
           <h2 class="partner-member__title">Кто может стать нашим партнером:</h2>
           <div class="partner-member__items">
             <div class="partner-member__item">
-              <div class="partner-member__left"></div>
+              <div class="partner-member__left"><img src="img/rectangle-2.svg" alt=""></div>
               <div class="partner-member__inner">
                 <p class="partner-member__hint">Являемся партнером 40 банков</p>
                 <h3 class="partner-member__subtitle">Банки</h3>
@@ -205,7 +208,7 @@
               </div>
             </div>
             <div class="partner-member__item">
-              <div class="partner-member__left"></div>
+              <div class="partner-member__left"><img src="img/rectangle-2.svg" alt=""></div>
               <div class="partner-member__inner">
                 <h3 class="partner-member__subtitle partner-member__subtitle--margin">Частные инвесторы</h3>
                 <p class="partner-member__text">Предлагаем высокую доходность при минимальных рисках</p>
@@ -220,7 +223,7 @@
               </div>
             </div>
             <div class="partner-member__item">
-              <div class="partner-member__left"></div>
+              <div class="partner-member__left"><img src="img/rectangle-2.svg" alt=""></div>
               <div class="partner-member__inner">
                 <h3 class="partner-member__subtitle partner-member__subtitle--margin">Агенты</h3>
                 <p class="partner-member__text">Привлекайте клиентов и получайте высокие комиссионные за каждую оформленную заявку на кредит. Гибкие условия партнёрской программы и постоянная поддержка</p>
@@ -235,7 +238,7 @@
               </div>
             </div>
             <div class="partner-member__item">
-              <div class="partner-member__left"></div>
+              <div class="partner-member__left"><img src="img/rectangle-2.svg" alt=""></div>
               <div class="partner-member__inner">
                 <h3 class="partner-member__subtitle partner-member__subtitle--margin">Кредитные брокеры</h3>
                 <p class="partner-member__text">Предлагаем брокерам выгодные условия сотрудничества для привлечения новых клиентов на получение кредитов. Высокие комиссионные и техподдержка.</p>

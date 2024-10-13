@@ -109,11 +109,16 @@
   padding: 50px;
 }
 .deposit__circle {
-  width: 146px;
-  height: 146px;
+  min-width: 146px;
+  min-height: 146px;
+  max-width: 146px;
+  max-height: 146px;
   margin: 0 auto 40px;
+}
+.deposit__circle img{
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  background-color: #d9d9d9;
 }
 .deposit__text {
   font-weight: 600;
@@ -138,12 +143,17 @@
   gap: 66px;
 }
 .advantages__circle {
-  width: 73px;
-  height: 73px;
-  border-radius: 50%;
-  background-color: #c4c4c4;
+  min-width: 73px;
+  min-height: 73px;
+  max-width: 73px;
+  max-height: 73px;
   margin: 0 auto;
   margin-bottom: 12px;
+}
+.advantages__circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 .advantages__item {
   text-align: center;
@@ -178,8 +188,13 @@
 .private-conditions__circle {
   min-width: 65px;
   min-height: 65px;
+  max-width: 65px;
+  max-height: 65px;
+}
+.private-conditions__circle img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  background-color: #6c6c6c;
 }
 .private-conditions__text {
   font-weight: 600;
@@ -534,10 +549,13 @@
   margin-bottom: 22px;
 }
 .partner-member__left {
-  height: 100%;
   width: 304px;
   min-width: 200px;
-  background: #ccc;
+}
+.partner-member__left img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
   border-radius: 20px 0 0 20px;
 }
 .partner-member__list {

@@ -20,20 +20,20 @@
             </div>
           </div>
           <a href="#calc" class="header__calc-btn">Калькулятор кредитования</a>
-          <a href="#" class="header__consultation-btn">Получить консультацию</a>
+          <a href="#consultation" class="header__consultation-btn">Получить консультацию</a>
           <div class="header__right">
             <div class="header__contacts">
-              <p class="header__number">+7 (989) 209-74-50</p>
+              <a href="tel:+79892097450" class="header__number">+7 (989) 209-74-50</a>
               <p class="header__timetable">
                 <span class="header__timetable--black">Пн-Пт:</span> с 9:00 до
                 19:00
               </p>
             </div>
             <div class="header__socials">
-              <a href="#" class="header__social"
+              <a href="https://t.me/+79892097450" class="header__social"
                 ><img src="img/tg.svg" alt=""
               /></a>
-              <a href="#" class="header__social"
+              <a href="https://wa.me/79892097450" class="header__social"
                 ><img src="img/whatsapp.svg" alt=""
               /></a>
             </div>
@@ -42,8 +42,8 @@
         <nav class="nav">
           <ul class="menu">
             <li class="menu__item menu__item--list">
-              <p class="menu__link">Бизнесу <img src="img/arr-down.svg" alt="Стрелка вниз"
-              /></p>
+              <a href="#" class="menu__link">Бизнесу <img src="img/arr-down.svg" alt="Стрелка вниз"
+              /></a>
               <ul class="submenu">
                 <li><a href="businessWithout.html">Кредитование юридических лиц без залога</a></li>
                 <li><a href="businessWith.html">Кредитование юридических лиц c залогом</a></li>
@@ -57,9 +57,9 @@
               </ul>
             </li>
             <li class="menu__item menu__item--list">
-              <p class="menu__link"
+              <a href="#" class="menu__link"
                 >Физ лицам <img src="img/arr-down.svg" alt="Стрелка вниз"
-              /></p>
+              /></a>
               <ul class="submenu submenu--phys">
                 <li><a href="privateFlat.html">Кредит для физ лиц под залог квартиры от частного инвестора</a></li>
                 <li><a href="privateRoom.html">Кредит для физ лиц под залог комнаты от частного инвестора</a></li>
@@ -68,9 +68,9 @@
               </ul>
             </li>
             <li class="menu__item menu__item--list">
-              <p class="menu__link"
+              <a href="#" class="menu__link"
                 >Выкуп <img src="img/arr-down.svg" alt="Стрелка вниз"
-              /></p>
+              /></a>
               <ul class="submenu submenu--buyout">
                 <li><a href="buyoutFlat.html">Срочный выкуп квартиры</a></li>
                 <li><a href="buyoutRoom.html">Срочный выкуп комнаты</a></li>
@@ -130,7 +130,7 @@
             <div class="hero__left">
               <div class="hero__list">
                 <div class="hero__item">
-                  <div class="hero__circle"></div>
+                  <div class="hero__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                   <p class="hero__text">
                     Подбор кредита среди
                     <span class="text--semibold"
@@ -139,17 +139,17 @@
                   </p>
                 </div>
                 <div class="hero__item">
-                  <div class="hero__circle"></div>
+                  <div class="hero__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                   <p class="hero__text text--semibold">Без массовых рассылок</p>
                 </div>
                 <div class="hero__item">
-                  <div class="hero__circle"></div>
+                  <div class="hero__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                   <p class="hero__text text--semibold">
                     Подбор на ваших условиях
                   </p>
                 </div>
                 <div class="hero__item">
-                  <div class="hero__circle"></div>
+                  <div class="hero__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                   <p class="hero__text">
                     <span class="text--semibold">Полное сопровождение -</span>
                     от анализа до выдачи средств
@@ -235,16 +235,19 @@
                   <p class="results__amount">3.0%</p>
                 </div>
               </div>
-              <label class="calc__label" for="number"
-                >Оставьте заявку, чтобы получить кредит на ваших условиях</label
-              >
-              <input
-                type="number"
-                id="number"
-                name="number"
-                class="results__input"
-                placeholder="+7 (___) ___-__-__" />
-              <a href="#" class="results__btn">Получить кредит</a>
+              <form action="" method="post" class="results__form">
+                <label class="calc__label" for="number"
+                  >Оставьте заявку, чтобы получить кредит на ваших условиях</label
+                >
+                <input
+                  type="number"
+                  id="number"
+                  name="number"
+                  class="results__input"
+                  required
+                  placeholder="+7 (___) ___-__-__" />
+                <button type="submit" class="results__btn">Получить кредит</button>
+              </form>
             </div>
           </div>
           <p class="calc-section__text">
@@ -326,7 +329,7 @@
           <div class="benefits__items">
             <div class="benefits__item">
               <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
+                <div class="benefits__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                 <h3 class="benefits__subtitle">
                   Точечный подбор банков или частного инвестора для
                   максимального шанса одобрения
@@ -342,7 +345,7 @@
             </div>
             <div class="benefits__item">
               <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
+                <div class="benefits__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                 <h3 class="benefits__subtitle">
                   Оплата только после выдачи кредита
                 </h3>
@@ -354,7 +357,7 @@
             </div>
             <div class="benefits__item">
               <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
+                <div class="benefits__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                 <h3 class="benefits__subtitle">
                   Полное сопровождение на всех этапах
                 </h3>
@@ -369,7 +372,7 @@
             </div>
             <div class="benefits__item">
               <div class="benefits__item-top">
-                <div class="benefits__circle"></div>
+                <div class="benefits__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                 <h3 class="benefits__subtitle">Более 3241 успешных кредитов</h3>
               </div>
               <div class="benefits__text">
@@ -393,34 +396,34 @@
                 банками
               </p>
               <div class="statistics__img-wrapper">
-                <div class="statistics__img"></div>
+                <div class="statistics__img"><img src="img/rectangle.svg" alt=""></div>
               </div>
             </div>
             <div class="statistics__right">
               <div class="statistics__item">
-                <div class="statistics__circle"></div>
+                <div class="statistics__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="statistics__amount">700+</p>
                 <p class="statistics__value">
                   клиентов обратились к нам за помощью
                 </p>
               </div>
               <div class="statistics__item">
-                <div class="statistics__circle"></div>
+                <div class="statistics__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="statistics__amount">378</p>
                 <p class="statistics__value">из них действующих бизнесов</p>
               </div>
               <div class="statistics__item">
-                <div class="statistics__circle"></div>
+                <div class="statistics__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="statistics__amount">3241</p>
                 <p class="statistics__value">заключено договоров</p>
               </div>
               <div class="statistics__item">
-                <div class="statistics__circle"></div>
+                <div class="statistics__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="statistics__amount">5 млрд ₽</p>
                 <p class="statistics__value">выдано кредитов за 4 года</p>
               </div>
               <div class="statistics__item">
-                <div class="statistics__circle"></div>
+                <div class="statistics__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="statistics__amount">25 млн ₽</p>
                 <p class="statistics__value">самая крупная сделка</p>
               </div>
@@ -532,7 +535,7 @@
               <span class="text--bold">в течение 3-7 дней</span>
             </h2>
             <div class="steps__hint">
-              <div class="steps__top-circle"></div>
+              <div class="steps__top-circle"><img src="img/cirlce-gray.svg" alt=""></div>
               <p class="steps__top-text">
                 Ваши интересы перед банками будет представлять
                 <span class="text--bold">личный менеджер</span>
@@ -543,7 +546,7 @@
             <div class="steps__img-wrapper"><img class="steps__img" src="img/steps-top.svg" alt="" /></div>
             <div class="steps__items">
               <div class="steps__item">
-                <div class="steps__circle"></div>
+                <div class="steps__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="steps__text">
                   <span class="text--underline text--btn"
                     >Вы оставляете заявку</span
@@ -552,39 +555,39 @@
                 </p>
               </div>
               <div class="steps__item">
-                <div class="steps__circle"></div>
+                <div class="steps__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="steps__text">
                   Мы даем предварительную оценку и бесплатную консультацию
                 </p>
               </div>
               <div class="steps__item">
-                <div class="steps__circle"></div>
+                <div class="steps__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="steps__text">
                   Согласовываем индивидуальные условия кредитования
                 </p>
               </div>
               <div class="steps__item">
-                <div class="steps__circle"></div>
+                <div class="steps__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="steps__text">Заключаем договор на оказание услуг</p>
               </div>
             </div>
             <div class="steps__img-wrapper"><img class="steps__img" src="img/steps-bottom.svg" alt="" /></div>
             <div class="steps__items steps__items--bottom">
               <div class="steps__item">
-                <div class="steps__circle"></div>
+                <div class="steps__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="steps__text">
                   Только после предварительного одобрения вы отправляете нужные
                   документы
                 </p>
               </div>
               <div class="steps__item">
-                <div class="steps__circle"></div>
+                <div class="steps__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="steps__text">
                   Отправляем заявку в банк и ждем подтверждения
                 </p>
               </div>
               <div class="steps__item">
-                <div class="steps__circle"></div>
+                <div class="steps__circle"><img src="img/cirlce-gray.svg" alt=""></div>
                 <p class="steps__text">
                   Вы получаете деньги и оплачиваете наши услуги
                 </p>
@@ -612,27 +615,30 @@
                   консультации</span
                 >
               </p>
-              <label class="consultation__label" for="status">Вы:</label>
-              <div class="consultation__select-wrapper">
-                <select class="consultation__select" name="status" id="status">
-                  <option value="privatePerson">Частное лицо</option>
-                </select>
-                <img class="consultation__arr" src="img/arr-down.svg" alt="" />
-              </div>
-              <label
-                class="consultation__label consultation__label--phone"
-                for="phone"
-                >Введите номер телефона</label
-              >
-              <div>
-                <input
-                  type="number"
-                  id="phone"
-                  name="phone"
-                  class="consultation__input"
-                  placeholder="+7 (___) ___-__-__" />
-                <a href="#" class="consultation__btn">Получить кредит</a>
-              </div>
+              <form action="" method="post" class="consultation__form">
+                <label class="consultation__label" for="status">Вы:</label>
+                <div class="consultation__select-wrapper">
+                  <select class="consultation__select" name="status" id="status" required>
+                    <option value="privatePerson">Частное лицо</option>
+                  </select>
+                  <img class="consultation__arr" src="img/arr-down.svg" alt="" />
+                </div>
+                <label
+                  class="consultation__label consultation__label--phone"
+                  for="phone"
+                  >Введите номер телефона</label
+                >
+                <div>
+                  <input
+                    type="number"
+                    id="phone"
+                    name="phone"
+                    class="consultation__input"
+                    required
+                    placeholder="+7 (___) ___-__-__" />
+                  <button type="submit" class="consultation__btn">Получить кредит</button>
+                </div>
+              </form>
             </div>
             <div class="consultation__right">
               <img src="img/expert.svg" alt="" />
@@ -693,7 +699,7 @@
                 <p class="articles__time">5 минут на прочтение</p>
                 <p class="articles__date">11.09.2024</p>
               </div>
-              <a href="" class="articles__link">Читать ></a>
+              <a href="#" class="articles__link">Читать ></a>
             </div>
             <div class="articles__item">
               <h3 class="articles__subtitle">Онлайн выписка ЕГРН</h3>
@@ -704,7 +710,7 @@
                 <p class="articles__time">5 минут на прочтение</p>
                 <p class="articles__date">11.09.2024</p>
               </div>
-              <a href="" class="articles__link">Читать ></a>
+              <a href="#" class="articles__link">Читать ></a>
             </div>
             <div class="articles__item">
               <h3 class="articles__subtitle">Онлайн выписка ЕГРН</h3>
@@ -715,7 +721,7 @@
                 <p class="articles__time">5 минут на прочтение</p>
                 <p class="articles__date">11.09.2024</p>
               </div>
-              <a href="" class="articles__link">Читать ></a>
+              <a href="#" class="articles__link">Читать ></a>
             </div>
           </div>
         </div>
@@ -819,7 +825,7 @@
           <div class="other__slider">
             <div class="other__track">
               <div class="other__slide">
-                <div class="services__item item-services ">
+                <div class="services__item item-services">
                   <h3 class="item-services__title">
                     Кредитование юридических лиц с залогом
                   </h3>
@@ -839,15 +845,15 @@
                   </div>
                   <div class="item-services__list">
                     <div>
-                      <div class="item-services__circle"></div>
+                      <div class="item-services__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                       <p class="item-services__text">Любая цель</p>
                     </div>
                     <div>
-                      <div class="item-services__circle"></div>
+                      <div class="item-services__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                       <p class="item-services__text">По 2м документам</p>
                     </div>
                     <div>
-                      <div class="item-services__circle"></div>
+                      <div class="item-services__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                       <p class="item-services__text">
                         Без перевода оборотов в банк
                       </p>
@@ -886,6 +892,82 @@
                     </div>
                     <div>
                       <div class="item-services__circle"></div>
+                      <p class="item-services__text">
+                        Без перевода оборотов в банк
+                      </p>
+                    </div>
+                  </div>
+                  <a href="#" class="item-services__btn">Подробнее</a>
+                </div>
+              </div>
+              <div class="other__slide">
+                <div class="services__item item-services">
+                  <h3 class="item-services__title item-services__title--one-line">
+                    Кредитование ИП с залогом
+                  </h3>
+                  <p class="item-services__subtitle">Сумма кредита</p>
+                  <p class="item-services__amount item-services__amount--main">
+                    500 тыс ₽ – 100 млн ₽
+                  </p>
+                  <div class="item-services__info">
+                    <div>
+                      <p class="item-services__subtitle">Процентная ставка</p>
+                      <p class="item-services__amount">от 12% годовых</p>
+                    </div>
+                    <div>
+                      <p class="item-services__subtitle">Срок</p>
+                      <p class="item-services__amount">До 20 лет</p>
+                    </div>
+                  </div>
+                  <div class="item-services__list">
+                    <div>
+                      <div class="item-services__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
+                      <p class="item-services__text">Любая цель</p>
+                    </div>
+                    <div>
+                      <div class="item-services__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
+                      <p class="item-services__text">По 2м документам</p>
+                    </div>
+                    <div>
+                      <div class="item-services__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
+                      <p class="item-services__text">
+                        Без перевода оборотов в банк
+                      </p>
+                    </div>
+                  </div>
+                  <a href="#" class="item-services__btn">Подробнее</a>
+                </div>
+              </div>
+              <div class="other__slide">
+                <div class="services__item item-services">
+                  <h3 class="item-services__title">
+                    Кредитование ИП и бизнеса под залог коммерческой недвижимости
+                  </h3>
+                  <p class="item-services__subtitle">Сумма кредита</p>
+                  <p class="item-services__amount item-services__amount--main">
+                    500 тыс ₽ – 200 млн ₽
+                  </p>
+                  <div class="item-services__info">
+                    <div>
+                      <p class="item-services__subtitle">Процентная ставка</p>
+                      <p class="item-services__amount">от 12% годовых</p>
+                    </div>
+                    <div>
+                      <p class="item-services__subtitle">Срок</p>
+                      <p class="item-services__amount">До 20 лет</p>
+                    </div>
+                  </div>
+                  <div class="item-services__list">
+                    <div>
+                      <div class="item-services__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
+                      <p class="item-services__text">Любая цель</p>
+                    </div>
+                    <div>
+                      <div class="item-services__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
+                      <p class="item-services__text">По 2м документам</p>
+                    </div>
+                    <div>
+                      <div class="item-services__circle"><img src="img/circle-dark-gray.svg" alt=""></div>
                       <p class="item-services__text">
                         Без перевода оборотов в банк
                       </p>
