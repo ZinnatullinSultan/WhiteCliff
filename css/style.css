@@ -856,8 +856,9 @@ select {
 .others__btn--prev {
   margin-right: 22px;
 }
-.partners__slide-img, .reviews__slide-img {
+.partners__slide-img, .reviews__slide-img, .other__slide div {
   width: 100%;
+  /* height: 100%; */
 }
 .steps {
   margin-bottom: 180px;

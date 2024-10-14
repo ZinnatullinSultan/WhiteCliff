@@ -356,13 +356,21 @@
   background: rgba(196, 196, 196, 0.71);
   position: relative;
 }
-.test__progressbar::before {
+/* .test__progressbar::before {
   content: '';
   border-radius: 400px;
   width: 128px;
   height: 4px;
   background: #676767;
   position: absolute;
+} */
+.test__progressbar-inner {
+  border-radius: 400px;
+  width: 0;
+  height: 4px;
+  background: #676767;
+  position: absolute;
+  transition: width 0.3s ease;
 }
 .test__next-btn {
   padding: 15px 25px;

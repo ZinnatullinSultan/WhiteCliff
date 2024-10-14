@@ -227,18 +227,20 @@
             <p class="question__title">Машиноместо находится на крытой или открытой автостоянке?</p>
             <div class="question__options question__options--margin">
               <div class="question__checkbox">
-                <input type="radio" id="option1" name="group1" checked />
+                <input type="radio" id="option1" name="group1" value="На крытой" />
                 <label for="option1">На крытой</label>
               </div>
               <div class="question__checkbox">
-                <input type="radio" id="option2" name="group1" />
+                <input type="radio" id="option2" name="group1" value="На открытой"/>
                 <label for="option2">На открытой</label>
               </div>
             </div>
             <div class="test__bottom">
               <div class="test__progress">
                 <p class="test__progress-text">Готово: <span style="font-size: 11px;">хх%</span></p>
-                <div class="test__progressbar"></div>
+                <div class="test__progressbar">
+                  <div class="test__progressbar-inner"></div>
+                </div>
               </div>
               <div class="test__control">
                 <div class="test__prev"><button><img src="img/test-left-arr.svg" alt=""></button></div>
@@ -265,13 +267,15 @@
             <p class="question__title">Какая площадь машиноместа?</p>
             <div class="question__options question__options--input">
               <div class="question__input-item">
-                <input type="text" class="question__input" value="Напишите точную площадь">
+                <input type="number" class="question__input" placeholder="Напишите точную площадь">
               </div>
             </div>
             <div class="test__bottom">
               <div class="test__progress">
                 <p class="test__progress-text">Готово: <span style="font-size: 11px;">хх%</span></p>
-                <div class="test__progressbar"></div>
+                <div class="test__progressbar">
+                  <div class="test__progressbar-inner"></div>
+                </div>
               </div>
               <div class="test__control">
                 <div class="test__prev"><button><img src="img/test-left-arr.svg" alt=""></button></div>
@@ -298,30 +302,32 @@
             <p class="question__title">По какой причине вам необходим срочный выкуп машиноместа?</p>
             <div class="question__options">
               <div class="question__checkbox">
-                <input type="radio" id="option11" name="group1" checked />
+                <input type="radio" id="option11" name="group1" value="Получение наличных денег максимально быстро" />
                 <label for="option11">Получение наличных денег максимально быстро</label>
               </div>
               <div class="question__checkbox">
-                <input type="radio" id="option22" name="group1" />
+                <input type="radio" id="option22" name="group1" value="Переезд/Смена места жительства"/>
                 <label for="option22">Переезд/Смена места жительства</label>
               </div>
               <div class="question__checkbox">
-                <input type="radio" id="option33" name="group1" />
+                <input type="radio" id="option33" name="group1" value="Раздел имущества (развод, наследство и т.д.)"/>
                 <label for="option33">Раздел имущества (развод, наследство и т.д.)</label>
               </div>
               <div class="question__checkbox">
-                <input type="radio" id="option44" name="group1" />
+                <input type="radio" id="option44" name="group1" value="Закрыть задолженности"/>
                 <label for="option44">Закрыть задолженности</label>
               </div>
               <div class="question__checkbox">
-                <input type="radio" id="option55" name="group1" />
+                <input type="radio" id="option55" name="group1" value="Другая причина"/>
                 <label for="option55">Другая причина</label>
               </div>
             </div>
             <div class="test__bottom">
               <div class="test__progress">
                 <p class="test__progress-text">Готово: <span style="font-size: 11px;">хх%</span></p>
-                <div class="test__progressbar"></div>
+                <div class="test__progressbar">
+                  <div class="test__progressbar-inner"></div>
+                </div>
               </div>
               <div class="test__control">
                 <div class="test__prev"><button><img src="img/test-left-arr.svg" alt=""></button></div>
@@ -348,22 +354,24 @@
             <p class="question__title">Когда вам необходимо получить деньги за машиноместа?</p>
             <div class="question__options question__options--third">
               <div class="question__checkbox">
-                <input type="radio" name="group1" checked />
+                <input type="radio" name="group1" value="В ближайшие 24-48 часов" />
                 <label for="option111 ">В ближайшие 24-48 часов</label>
               </div>
               <div class="question__checkbox">
-                <input type="radio" name="group1" />
+                <input type="radio" name="group1" value="В течение 3-5 дней"/>
                 <label for="option222">В течение 3-5 дней</label>
               </div>
               <div class="question__checkbox">
-                <input type="radio" name="group1" />
+                <input type="radio" name="group1" value="В течение 7-10 дней"/>
                 <label for="option333">В течение 7-10 дней</label>
               </div>
             </div>
             <div class="test__bottom">
               <div class="test__progress">
                 <p class="test__progress-text">Готово: <span style="font-size: 11px;">хх%</span></p>
-                <div class="test__progressbar"></div>
+                <div class="test__progressbar">
+                  <div class="test__progressbar-inner"></div>
+                </div>
               </div>
               <div class="test__control">
                 <div class="test__prev"><button><img src="img/test-left-arr.svg" alt=""></button></div>
@@ -399,7 +407,7 @@
                   </div>
                   <div class="thanks-test__item">
                     <label for="th-in" class="thanks-test__label">Введите номер</label>
-                    <input type="text" name="th-in" class="thanks-test__input" placeholder="+7 (___) ___-__-__" required>
+                    <input type="number" name="th-in" class="thanks-test__input" placeholder="+7 (___) ___-__-__" required>
                   </div>
                   <button type="submit" class="thanks-test__btn thanks-test__btn--special">Узнать сумму выкупа</button>
                 </form>
@@ -524,19 +532,16 @@
           <div class="partners__slider">
             <div class="partners__track">
               <div class="partners__slide">
-                <img class="partners__slide-img" src="img/slide.svg" alt="" />
+                <img class="partners__slide-img" src="img/certificate-1.png" alt="" />
               </div>
               <div class="partners__slide">
-                <img class="partners__slide-img" src="img/slide.svg" alt="" />
+                <img class="partners__slide-img" src="img/certificate-2.png" alt="" />
               </div>
               <div class="partners__slide">
-                <img class="partners__slide-img" src="img/slide.svg" alt="" />
+                <img class="partners__slide-img" src="img/certificate-3.png" alt="" />
               </div>
               <div class="partners__slide">
-                <img class="partners__slide-img" src="img/slide.svg" alt="" />
-              </div>
-              <div class="partners__slide">
-                <img class="partners__slide-img" src="img/slide.svg" alt="" />
+                <img class="partners__slide-img" src="img/certificate-4.png" alt="" />
               </div>
             </div>
           </div>
@@ -640,7 +645,19 @@
                 <img class="reviews__slide-img" src="img/review-3.png" alt="" />
               </div>
               <div class="reviews__slide">
-                <img class="reviews__slide-img" src="img/review-1.png" alt="" />
+                <img class="reviews__slide-img" src="img/review-4.png" alt="" />
+              </div>
+              <div class="reviews__slide">
+                <img class="reviews__slide-img" src="img/review-5.png" alt="" />
+              </div>
+              <div class="reviews__slide">
+                <img class="reviews__slide-img" src="img/review-6.png" alt="" />
+              </div>
+              <div class="reviews__slide">
+                <img class="reviews__slide-img" src="img/review-7.png" alt="" />
+              </div>
+              <div class="reviews__slide">
+                <img class="reviews__slide-img" src="img/review-8.png" alt="" />
               </div>
             </div>
           </div>

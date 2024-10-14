@@ -19,11 +19,27 @@ const nextBtn = document.querySelector('.partners__btn--next');
 
 let currentSlide = 0;
 const totalSlides = slides.length;
-let visibleSlides = 3; 
+let visibleSlides = getVisibleSlides(); 
+
+function getVisibleSlides() {
+  if (window.innerWidth <= 530) {
+    return 1;
+  } else if (window.innerWidth <= 800) {
+    return 2;
+  } else {
+    return 3;
+  }
+}
 
 function updateSliderPosition() {
   const slideWidth = slides[0].clientWidth;
   slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+}
+
+function updateVisibleSlides() {
+  visibleSlides = getVisibleSlides(); // Обновляем количество видимых слайдов
+  currentSlide = Math.min(currentSlide, totalSlides - visibleSlides); // Проверяем, чтобы слайдер не застрял на недоступных слайдах
+  updateSliderPosition(); // Обновляем позицию слайдера
 }
 
 nextBtn.addEventListener('click', function() {
@@ -43,6 +59,9 @@ prevBtn.addEventListener('click', function() {
   }
   updateSliderPosition();
 });
+
+// Слушаем изменения размера окна и обновляем количество видимых слайдов
+window.addEventListener('resize', updateVisibleSlides);
 //Стрелка селекта
 const selectElement = document.querySelector('.consultation__select');
 const arr = document.querySelector('.consultation__arr');
@@ -80,11 +99,26 @@ const nextBtn2 = document.querySelector('.reviews__btn--next');
 
 let currentSlide2 = 0;
 const totalSlides2 = slides2.length;
-const visibleSlides2 = 3; 
+let visibleSlides2 = getVisibleSlides2(); 
+
+function getVisibleSlides2() {
+  if (window.innerWidth <= 680) {
+    return 1;
+  } else if (window.innerWidth <= 1130) {
+    return 2;
+  } else {
+    return 3;
+  }
+}
 
 function updateSliderPosition2() {
   const slideWidth = slides2[0].clientWidth;
   slider2.style.transform = `translateX(-${currentSlide2 * slideWidth}px)`;
+}
+function updateVisibleSlides2() {
+  visibleSlides2 = getVisibleSlides2(); // Обновляем количество видимых слайдов
+  currentSlide2 = Math.min(currentSlide2, totalSlides2 - visibleSlides2); // Проверяем, чтобы слайдер не застрял на недоступных слайдах
+  updateSliderPosition2(); // Обновляем позицию слайдера
 }
 
 nextBtn2.addEventListener('click', function() {
@@ -104,18 +138,89 @@ prevBtn2.addEventListener('click', function() {
   }
   updateSliderPosition2();
 });
+// Слушаем изменения размера окна и обновляем количество видимых слайдов
+window.addEventListener('resize', updateVisibleSlides2);
+
+const amountInput = document.getElementById('amount');
+  const periodInput = document.getElementById('period');
+  const percentInput = document.getElementById('percent');
+  
+  const resultsMainAmount = document.querySelector('.results__amount--main');
+  const resultsOverpayment = document.querySelector('.results__item:nth-child(1) .results__amount');
+  const resultsEffectiveRate = document.querySelector('.results__item:nth-child(2) .results__amount');
+  
+  function validateInputs(amount, period, annualRate) {
+    if (amount <= 0 ||  amount > 200000000) {
+      alert('Сумма кредита должна быть больше 0 и меньше 200 000 000 ₽');
+      return false;
+    }
+    if (period <= 0 || period > 20) {
+      alert('Срок кредита должен быть от 1 до 20 лет');
+      return false;
+    }
+    if (annualRate <= 0 || annualRate > 17) {
+      alert('Процентная ставка должна быть от 3% до 16%');
+      return false;
+    }
+    return true;
+  }
+
+  function calculateLoan() {
+    const amount = parseFloat(amountInput.value);
+    const period = parseFloat(periodInput.value);
+    const annualRate = parseFloat(percentInput.value);
+
+    // Проверка на валидность данных
+    if (!validateInputs(amount, period, annualRate)) {
+      return;
+    }
+
+    const monthlyRate = annualRate / 100 / 12;
+    const months = period * 12;
+    
+    // Формула для расчета ежемесячного платежа
+    const monthlyPayment = amount * (monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+    
+    // Переплата за весь срок
+    const totalPayment = monthlyPayment * months;
+    const overpayment = totalPayment - amount;
+    
+    // Эффективная процентная ставка (условно равна введенной)
+    const effectiveRate = annualRate;
+
+    resultsMainAmount.textContent = monthlyPayment.toFixed(2) + ' ₽';
+    resultsOverpayment.textContent = overpayment.toFixed(2) + ' ₽';
+    resultsEffectiveRate.textContent = effectiveRate.toFixed(2) + '%';
+  }
+
+  amountInput.addEventListener('input', calculateLoan);
+  periodInput.addEventListener('input', calculateLoan);
+  percentInput.addEventListener('input', calculateLoan);
 //слайдер 3
 const slider3 = document.querySelector('.other__track');
 const slides3 = document.querySelectorAll('.services__item');
 const prevBtn3 = document.querySelector('.other__btn--prev');
-const nextBtn3 = document.querySelector('.other__btn--next');3
+const nextBtn3 = document.querySelector('.other__btn--next');
 let currentSlide3 = 0;
 const totalSlides3 = slides3.length;
-const visibleSlides3 = 2; 
+let visibleSlides3 = getVisibleSlides3(); 
+
+function getVisibleSlides3() {
+  if (window.innerWidth <= 1130) {
+    return 1;
+  } else {
+    return 2;
+  }
+}
 
 function updateSliderPosition3() {
   const slideWidth3 = slides3[0].clientWidth;
   slider3.style.transform = `translateX(-${currentSlide3 * slideWidth3}px)`;
+}
+function updateVisibleSlides3() {
+  visibleSlides3 = getVisibleSlides3(); 
+  currentSlide3 = Math.min(currentSlide3, totalSlides3 - visibleSlides3); 
+  updateSliderPosition3(); 
 }
 
 nextBtn3.addEventListener('click', function() {
@@ -135,4 +240,4 @@ prevBtn3.addEventListener('click', function() {
   }
   updateSliderPosition3();
 });
-console.log(currentSlide3, slides3[0].clientWidth, slider3.style.transform);
+window.addEventListener('resize', updateVisibleSlides3);
