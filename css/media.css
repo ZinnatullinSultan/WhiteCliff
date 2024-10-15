@@ -50,7 +50,7 @@
   .steps--buyout .steps__items--bottom{
     gap: 155px;
   }
-  .menu__item--list:hover .submenu {
+  /* .menu__item--list:hover .submenu {
     display: none;
   }
   .menu__item--list:hover img {
@@ -62,7 +62,7 @@
   }
   .menu__item--list.active img {
     transform: rotate(-180deg);
-  }
+  } */
 }
 @media(max-width: 1200px){
   .partner-member__items{
