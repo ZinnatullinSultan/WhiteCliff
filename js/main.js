@@ -1,3 +1,19 @@
+document.querySelectorAll('.menu__item--list').forEach(function(item) {
+  item.addEventListener('click', function(e) {
+    // Отменяем действие по умолчанию
+    e.preventDefault();
+
+    // Закрываем другие активные элементы
+    document.querySelectorAll('.menu__item--list').forEach(function(el) {
+      if (el !== item) {
+        el.classList.remove('active');
+      }
+    });
+
+    // Переключаем активный класс на текущем элементе
+    item.classList.toggle('active');
+  });
+});
 //вкладки на главной странице
 const tabsBtn = document.querySelectorAll('.services__tab-btn');
 const tabsItems = document.querySelectorAll('.services__tab');
