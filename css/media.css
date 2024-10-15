@@ -366,13 +366,19 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 30px;
   }
-  /* .menu__item--list:hover .submenu {
+  .menu__item--list:hover .submenu {
     display: none;
   }
-  
   .menu__item--list:hover img {
     transform: none;
-  } */
+  }
+
+  .menu__item--list.active .submenu {
+    display: block;
+  }
+  .menu__item--list.active img {
+    transform: rotate(-180deg);
+  }
 }
 @media(max-width: 680px) {
   .menu{
@@ -857,6 +863,10 @@
   }
   .submenu--buyout {
     transform: translateX(-194px);
+  }
+  .main-footer__contacts{
+    flex-direction: column;
+    gap: 10px;
   }
 }
 @media(max-width: 355px) {

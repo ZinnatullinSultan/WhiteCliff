@@ -206,18 +206,18 @@ nav li a:hover{
 .submenu li:last-child{
   margin-bottom: 0;
 }
-/* .menu__item--list:hover .submenu {
-  display: block;
+.menu__item--list img {
+  transition: transform 0.3s ease;
 }
 
-.menu__item--list:hover img {
-  transform: rotate(-180deg);
-} */
-.menu__item--list.active .submenu {
+.menu__item--list:hover .submenu {
   display: block;
 }
-.menu__item--list.active img {
+.menu__item--list:hover img {
   transform: rotate(-180deg);
+}
+.main-footer__number{
+  min-width: 140px;
 }
 
 .footer__top {

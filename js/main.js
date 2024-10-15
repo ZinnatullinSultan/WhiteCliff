@@ -1,17 +1,36 @@
-document.querySelectorAll('.menu__item--list').forEach(function(item) {
-  item.addEventListener('click', function(e) {
-    // Отменяем действие по умолчанию
-    e.preventDefault();
+// Находим все элементы с классом menu__item--list
+const menuItems = document.querySelectorAll('.menu__item--list');
 
-    // Закрываем другие активные элементы
-    document.querySelectorAll('.menu__item--list').forEach(function(el) {
-      if (el !== item) {
-        el.classList.remove('active');
+// Проходим по каждому из них
+menuItems.forEach(function(item) {
+  // Добавляем обработчик клика
+  item.addEventListener('click', function(event) {
+    // Проверяем, есть ли подменю внутри текущего пункта меню
+    const submenu = item.querySelector('.submenu');
+
+    // Если есть подменю, обрабатываем его
+    if (submenu) {
+      // Если клик был по ссылке внутри подменю, не отменяем переход
+      if (event.target.closest('.submenu a')) {
+        return; // Переход по ссылке будет происходить
       }
-    });
 
-    // Переключаем активный класс на текущем элементе
-    item.classList.toggle('active');
+      // Отменяем стандартное поведение ссылки для самого пункта меню
+      event.preventDefault();
+
+      // Проверяем, активно ли подменю
+      const isActive = item.classList.contains('active');
+
+      // Закрываем все открытые подменю
+      menuItems.forEach(function(menuItem) {
+        menuItem.classList.remove('active');
+      });
+
+      // Если текущее подменю не было открыто, открываем его
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
   });
 });
 //вкладки на главной странице
