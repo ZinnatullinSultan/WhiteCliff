@@ -50,6 +50,19 @@
   .steps--buyout .steps__items--bottom{
     gap: 155px;
   }
+  .menu__item--list:hover .submenu {
+    display: none;
+  }
+  .menu__item--list:hover img {
+    transform: none;
+  }
+  
+  .menu__item--list.active .submenu {
+    display: block;
+  }
+  .menu__item--list.active img {
+    transform: rotate(-180deg);
+  }
 }
 @media(max-width: 1200px){
   .partner-member__items{
@@ -187,21 +200,6 @@
   .contacts__box{
     flex-direction: column;
     align-items: center;
-  }
-}
-@media(max-width: 1024px){
-  .menu__item--list:hover .submenu {
-    display: none;
-  }
-  .menu__item--list:hover img {
-    transform: none;
-  }
-  
-  .menu__item--list.active .submenu {
-    display: block;
-  }
-  .menu__item--list.active img {
-    transform: rotate(-180deg);
   }
 }
 @media(max-width: 900px) {
