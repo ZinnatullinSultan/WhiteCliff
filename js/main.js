@@ -223,9 +223,10 @@ const amountInput = document.getElementById('amount');
     // Эффективная процентная ставка (условно равна введенной)
     const effectiveRate = annualRate;
 
-    resultsMainAmount.textContent = monthlyPayment.toFixed(2) + ' ₽';
-    resultsOverpayment.textContent = overpayment.toFixed(2) + ' ₽';
-    resultsEffectiveRate.textContent = effectiveRate.toFixed(2) + '%';
+    // Обработка возможных NaN значений
+  resultsMainAmount.textContent = isNaN(monthlyPayment) ? '0 ₽' : monthlyPayment.toFixed(2) + ' ₽';
+  resultsOverpayment.textContent = isNaN(overpayment) ? '0 ₽' : overpayment.toFixed(2) + ' ₽';
+  resultsEffectiveRate.textContent = isNaN(effectiveRate) ? '0%' : effectiveRate.toFixed(2) + '%';
   }
 
   amountInput.addEventListener('input', calculateLoan);
